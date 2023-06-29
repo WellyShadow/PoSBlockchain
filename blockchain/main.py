@@ -9,8 +9,13 @@ if __name__ == '__main__':
 
     transaction = Trancastion(sender,receiver,amount,type)
     wallet = Wallet()
-
     signature = wallet.sign(transaction.toJson())
+
     transaction.sign(signature)
+
+    signatureValid = Wallet.signatureValid(transaction.toJson(),signature, wallet.publicKeyString())
     print(transaction.toJson())
+    print(signature)
+    print(wallet.publicKeyString())
+    print(signatureValid)
     
