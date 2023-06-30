@@ -1,9 +1,11 @@
-
+from Block import Block
+from BlockchainUtils import BlockchainUtils
 
 class Blockchain():
 
     def __init__(self):
-        self.blocks = []
+        self.blocks = [Block.genesis()]
+
 
     def addBlock(self,block):
         self.blocks.append(block)
@@ -15,3 +17,17 @@ class Blockchain():
             jsonBlocks.append(block.toJson())
         data['blocks'] = jsonBlocks
         return data
+    
+    def blockCountValid(self,block):
+        if self.blocks[-1].blockCount == block.blockCount - 1:
+            return True
+        else:
+            return False
+        
+    def lashBlockHashValid(self,block):
+        latestBlockchainBlockHash = BlockchainUtils.hash(self.blocks[-1].payload()).hexdigest()
+        if latestBlockchainBlockHash == block.lastHash:
+            return True
+        else:
+            return False
+    
