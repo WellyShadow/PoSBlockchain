@@ -1,8 +1,9 @@
 import uuid
 import time
+import copy
 
 
-class Trancastion():
+class Transaction():
 
     def __init__(self,senderPublicKey,receiverPublicKey,amount,type):
         self.senderPublicKey = senderPublicKey
@@ -18,3 +19,8 @@ class Trancastion():
     
     def sign(self,signature):
         self.signature = signature
+
+    def payload(self):
+        jsonRepresentation = copy.deepcopy(self.toJson())
+        jsonRepresentation['signature'] = ''
+        return jsonRepresentation
