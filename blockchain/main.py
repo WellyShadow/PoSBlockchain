@@ -8,13 +8,22 @@ import pprint
 from AccountModel import AccountModel
 if __name__ == '__main__':
 
-    wallet = Wallet()
-    accountModel = AccountModel()
+    blockchain = Blockchain()
+    pool = TransactionPool()
 
-    accountModel.updateBalace(wallet.publicKeyString(), 10)
-    accountModel.updateBalace(wallet.publicKeyString(), -5)
+    alice = Wallet()
+    bob = Wallet()
 
-    print(accountModel.balances)
+    #alise wants to send 5 tokens to bob
+
+    transaction = alice.createTransaction(bob.publicKeyString(), 5, 'TRANSFER')
+
+    if not pool.transactionExists(transaction):
+        pool.addTransaction(transaction)
+
+    coveredTransaction = blockchain.getCoveredTransactionSet(pool.transactions)
+
+    print(coveredTransaction)
     
 
 
