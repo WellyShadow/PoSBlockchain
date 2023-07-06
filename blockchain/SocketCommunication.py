@@ -32,7 +32,7 @@ class SocketCommunication (Node):
     def send(self, receiver, message):
         self.send_to_node(receiver,message)
 
-    def broadcast(self, message): #need if fail connection for first tru
+    def broadcast(self, message): #need if fail connection for first try
         self.send_to_nodes(message)
 
     

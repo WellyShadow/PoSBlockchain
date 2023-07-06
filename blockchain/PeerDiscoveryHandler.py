@@ -1,6 +1,7 @@
 import threading
 import time
-
+from Message import Message
+from BlockchainUtils import BlockchainUtils
 #Broadcast all the nodes, all peers in network
 class PeerDiscoveryHandler():
 
@@ -24,6 +25,14 @@ class PeerDiscoveryHandler():
             time.sleep(10)
 
     def handshake(self, connect_node): #exchange info between nodes
-        self.socketCommunication.send(connect_node,'Handshake ...')
+        handshakeMessage = self.handshakeMessage()
+        self.socketCommunication.send(connect_node, handshakeMessage)
     
-        
+    def handshakeMessage(self):
+        ownConnector = self.socketCommunication.socketConnector     
+        ownPeers = self.socketCommunication.peers
+        data = ownPeers
+        messageType = 'DISCOVERY'
+        message = Message(ownConnector, messageType, data)
+        encodedMessage = BlockchainUtils.encode(message)
+        return encodedMessage
