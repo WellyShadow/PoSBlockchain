@@ -1,13 +1,17 @@
 from p2pnetwork.node import Node
+from PeerDiscoveryHandler import PeerDiscoveryHandler
 
-
+#peers = nodes
 class SocketCommunication (Node):
 
     def __init__(self, ip, port):
         super(SocketCommunication, self).__init__(ip, port, None)
+        self.peers = []
+        self.PeerDiscoveryHandler = PeerDiscoveryHandler(self)
 
     def startSocketCommunication(self):
         self.start()
+        self.PeerDiscoveryHandler.start()
 
     def inbound_node_connected(self, connected_node):
         print('inbound connection')
@@ -19,4 +23,6 @@ class SocketCommunication (Node):
 
     def node_message(self, connected_node, message):
         print(message)
+
+    
 

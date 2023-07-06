@@ -8,9 +8,9 @@ class PeerDiscoveryHandler():
         self.socketCommunication = node
 
     def start(self):
-        statusThread = threading.Thread(self.status,args=())
+        statusThread = threading.Thread(target=self.status,args=())
         statusThread.start()
-        discoveryThread = threading.Thread(self.discovery,args=())
+        discoveryThread = threading.Thread(target=self.discovery,args=())
         discoveryThread.start()
 
     def status(self):
