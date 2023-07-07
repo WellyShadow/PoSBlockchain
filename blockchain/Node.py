@@ -19,4 +19,7 @@ class Node():
 
     def startAPI(self, apiPort):
         self.api = NodeAPI()
+        self.api.injectNode(self)
         self.api.start(apiPort)
+
+    
