@@ -1,5 +1,5 @@
 from flask_classful import FlaskView, route #logic behind
-from flask import Flask #app allows interact with endpoints
+from flask import Flask, jsonify #app allows interact with endpoints
 
 node = None
 
@@ -23,3 +23,11 @@ class NodeAPI(FlaskView):
     @route('/blockchain', methods = ['GET'])
     def blockchain(self):
         return node.blockchain.toJson(), 200
+    
+    @route('/transactionPool', methods = ['GET'])
+    def transactionPool(self):
+        transactions = []
+        for ctr, transaction in enumerate(node.transactionPool.transactions): #number of object and object itself
+            transactions[ctr] = transaction.toJson()
+        return jsonify(transactions), 200
+        
