@@ -7,9 +7,9 @@ class NodeAPI(FlaskView):
     def __init__(self):
         self.app = Flask(__name__)  #flask app
 
-    def start(self):
+    def start(self, apiPort):
         NodeAPI.register(self.app, route_base='/')
-        self.app.run(host = 'localhost')
+        self.app.run(host = 'localhost', port = apiPort)
 
     @route('/info', methods = ['GET'])
     def info(self):
