@@ -43,6 +43,23 @@ class Node():
             if forgingRequired:
                 self.forge()
 
+    def handleBlock(self,block):
+        forger = block.forger
+        blockHash = block.payload()
+        signature = block.signature
+
+        blockCountValid = self.blockchain.blockCountValid(block)
+        lastBlockHashValid = self.blockchain.lashBlockHashValid(block)
+        forgerValid = self.blockchain.forgerValid(block)
+        transactionsValid = self.blockchain.transactionValid(block.transactions)
+        signatureValid = Wallet.signatureValid(blockHash, signature, forger)
+        if blockCountValid and lastBlockHashValid and forgerValid and transactionsValid and signatureValid:
+            self.blockchain.addBlock(block)
+            self.transactionPool.removeFromPool(block.transactions)
+            message = Message(self.p2p.socketConnector, 'BLOCK', block)
+            encodedMessage = BlockchainUtils.encode(message)
+            self.p2p.broadcast(encodedMessage)
+            
     def forge(self):
         forger = self.blockchain.nextForger()
         if forger == self.wallet.publicKeyString():
