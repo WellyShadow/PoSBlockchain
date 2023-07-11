@@ -5,6 +5,11 @@ class ProofOfStake():
     
     def __init__(self):
         self.stackers = {}
+        self.setGenesisNodeStake()
+
+    def setGenesisNodeStake(self):
+        genesisPublicKey = open('keys/genesisPublicKey.pem', 'r').read()
+        self.stackers[genesisPublicKey] = 1
     
     def update(self, publicKeyString, stake):
         if publicKeyString in self.stackers.keys():
