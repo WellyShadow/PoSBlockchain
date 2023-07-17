@@ -78,7 +78,7 @@ class Node():
         localBlockCount = len(localBlockchainCopy.blocks)
         receivedChainBlockCount = len(blockchain.blocks)
         if localBlockCount < receivedChainBlockCount:
-            for blockNumber, block in enumerate(blockchain.bloks):
+            for blockNumber, block in enumerate(blockchain.blocks):
                 if blockNumber >= localBlockCount:
                     localBlockchainCopy.addBlock(block)
                     self.transactionPool.removeFromPool(block.transactions)

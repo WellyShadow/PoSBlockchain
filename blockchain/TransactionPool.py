@@ -26,7 +26,7 @@ class TransactionPool():
         self.transactions = newPoolTransactions
 
     def forgerRequired(self):
-        if len(self.transactions)>=1: #block for each tx
+        if len(self.transactions)>=3: #block for each tx
             return True
         else:
             return False
