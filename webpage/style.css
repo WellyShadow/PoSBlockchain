@@ -1,6 +1,5 @@
 body {
     margin: 0;
-
 }
 /* #region header */
 
@@ -60,8 +59,7 @@ header {
 
 .sign__button{
     display: flex;
-    width: 108px;
-    height: 50px;
+    max-width:108px ;
     margin: 25px 20px 25px 0px;
     border: 0;
     padding: 0;
@@ -76,6 +74,7 @@ header {
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    flex-grow: 1;
 }
 
 /* #endregion */
@@ -84,12 +83,15 @@ header {
     justify-content:space-between;
     flex-direction:column;
 }
+
+/* #region section1 */
 .section1{
-    height: 88vh;
     background-image: url(images/airplane1.jpg);
-    background-position: center;
+    background-position:center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:cover;
+    margin-bottom: 210px;
+    max-height: 90vh;
     
 }
 
@@ -121,7 +123,11 @@ header {
 .buyticket__form{
     display: flex;
     flex-direction:column;
-    margin: 0 168px 110px 168px;
+    margin: 0 168px 0 168px;
+    box-shadow: 1px 2px 3px #8E69F8;
+    background: linear-gradient(0, #FFF 90%, #8E69F8 10%);;
+    background-size: cover;
+    border-radius: 20px;
 }
 
 
@@ -135,24 +141,115 @@ header {
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    padding: 25px 86px 28px 125px;
+    padding: 25px 86px 28px 89px;
     /*background-image: url('images/icons/Icon1.svg');*/
+    flex-grow: 1;
+    border: none;
 }
+
+.choose__button:focus{
+    background: #FFF;
+}
+
+
+
+
 .button-group{
     display: flex;
     flex-direction:row;
-    justify-content: stretch;
-  /* Дополнительно сделаем вертикальное выравнивание */
 }
+
+
+.info{
+    display: flex;
+    flex-direction:row;
+    margin: 33px 20px 31px 20px;
+}
+.item__info{
+    display: flex;
+    flex-direction:column;
+    margin-right: 20px;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    flex-grow: 1;
+}
+/*
+.to{
+    display: flex;
+    flex-direction:column;
+    margin-right: 20px
+}
+.date{
+    display: flex;
+    flex-direction:column;
+    margin-right: 20px
+}
+.pass{
+    display: flex;
+    flex-direction:column;
+    margin-right: 20px
+}*/
+/*
 .info-group{
     display: flex;
-    justify-content:space-between;
+    justify-content:left;
     flex-direction:row;
     margin: 33px 285px 12px 20px;
 }
 .input-group{
     display: flex;
-    justify-content:space-evenly;
+    justify-content:left;
     flex-direction:row;
-    margin: 12px 20px 31px 20px;
+    margin: 0 20px 31px 20px;
+}
+*/
+
+.label-info-group{
+    margin-bottom: 12px;
+    /*flex-grow: 1;*/
+}
+
+.item-input-group{
+    border-radius: 10px;
+    background: #EDEDED;
+    border: none;
+    flex-grow: 1;
+    padding: 0;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #9E9E9E;
+    padding: 20px 0px 17px 20px;
+}
+
+.fing__button{
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border-radius: 40px;
+    background: #8E69F8;
+    border:none;
+    margin: 39px 20px 0 0;
+    padding: 20px 50px 20px 50px;
+}
+
+/* #endregion */
+
+
+.h2__section2{
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }
