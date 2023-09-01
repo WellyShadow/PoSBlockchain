@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+
+}
+/* #region header */
+
+header {
+    display: flex;
+    /*flex-direction:raw;*/
+    justify-content:space-between;
+    box-sizing: border-box;
+    margin: 0 60px;
+    height: 100px;
+}
+
+.icon {
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+    margin: 20px;
+}
+
+.name {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    background: linear-gradient(267deg, #FFD256 0%, #8E69F8 98.97%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+    margin: 35px 169px 35px 0;
+}
+
+.nav__link{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0;
+    margin: 38px 20px;
+    text-decoration: none;
+    
+}
+
+.register{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration: none;
+    margin: 35px 15px 35px 127px;
+}
+
+.sign__button{
+    display: flex;
+    width: 108px;
+    height: 50px;
+    margin: 25px 20px 25px 0px;
+    border: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 40px;
+    background: #8E69F8;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+/* #endregion */
+.main{
+    display: flex;
+    justify-content:space-between;
+    flex-direction:column;
+}
+.section1{
+    height: 88vh;
+    background-image: url(images/airplane1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.h2__section1{
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    margin: 112px 127px 15px 126px;
+}
+
+.h3__section1{
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    margin: 0 273px 374px 270px;
+    color: #FFD256;
+    -webkit-text-fill-color: none;
+}
+
+.buyticket__form{
+    display: flex;
+    flex-direction:column;
+    margin: 0 168px 110px 168px;
+}
+
+
+
+.choose__button{
+    border-radius: 20px 20px 0px 0px;
+    background: #8E69F8;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 25px 86px 28px 125px;
+    /*background-image: url('images/icons/Icon1.svg');*/
+}
+.button-group{
+    display: flex;
+    flex-direction:row;
+    justify-content: stretch;
+  /* Дополнительно сделаем вертикальное выравнивание */
+}
+.info-group{
+    display: flex;
+    justify-content:space-between;
+    flex-direction:row;
+    margin: 33px 285px 12px 20px;
+}
+.input-group{
+    display: flex;
+    justify-content:space-evenly;
+    flex-direction:row;
+    margin: 12px 20px 31px 20px;
+}
