@@ -310,3 +310,80 @@ header {
 
 /* #endregion */
 
+
+/* #region section3 */
+.section3{
+    background-color: #8E69F8;
+}
+
+.h2__section3{
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    
+}
+
+.whychooseus{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 60px 113px 80px;
+    
+}
+
+
+
+.whychooseus-item{
+    background: #FFF;
+    margin-right: 20px;
+    border-radius: 20px 20px 20px 20px;
+    width: 33%;
+    text-align: center;
+    /*max-height: 447px;*/
+    position: relative;
+    
+
+}
+.whychooseus-item::after{
+    content: url(images/icons/Group19.svg);
+    display: block;
+    position: absolute;
+    top: 90px;
+    right: -55px;
+    color: white; 
+    padding: 10px;
+    border-radius: 10px;
+    z-index: 10; 
+}
+
+.whychooseus-title{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: -0.7px;
+    margin: 31px 0 19px 0;
+}
+
+.whychooseus-text{
+    color: rgba(0, 0, 0, 0.60);
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0 21px 35px 21px;
+
+}
+
+.whychooseus-svg{
+    margin-top: 72px;
+}
+
+/* #endregion */
+
