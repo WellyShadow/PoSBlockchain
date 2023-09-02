@@ -228,6 +228,8 @@ header {
 }
 
 .fing__button{
+    display: flex;
+    align-items: center;
     color: #FFF;
     font-family: Montserrat;
     font-size: 20px;
@@ -238,12 +240,13 @@ header {
     background: #8E69F8;
     border:none;
     margin: 39px 20px 0 0;
-    padding: 20px 50px 20px 50px;
+    padding: 0 50px 0 50px;
 }
 
 /* #endregion */
 
 
+/* #region section2*/
 .h2__section2{
     color: #000;
     text-align: center;
@@ -252,4 +255,58 @@ header {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    margin-bottom: 60px;
 }
+
+
+.popular-directions{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    margin: 0 80px 115px 80px;  
+    background-color: #FFF;
+}
+
+.direction{
+    margin: 0px 20px 0px 0px;
+    border-radius: 0px 0px 20px 20px;
+    background-color: white;
+    box-shadow: #8E69F8 1px 1px 2px;
+
+}
+
+.name-direction{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 28px 0px 3px 29px;
+    margin: 0;
+}
+
+.price-direction{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 0 0 11px 30px;
+    margin: 0;
+}
+
+.moreinfo-direction{
+    color: rgba(28, 27, 113, 0.50);
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 0 0 30px 33px;
+    margin: 0;
+}
+
+/* #endregion */
+
