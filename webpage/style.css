@@ -57,6 +57,23 @@ header {
     margin: 35px 15px 35px 127px;
 }
 
+.inacc__header{
+    display: flex;
+    margin: 26px 20px 26px 176px;
+    gap: 14px;
+    align-items: center;
+
+}
+.inacc__header > span {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+
 .sign__button{
     display: flex;
     max-width:108px ;
@@ -610,4 +627,221 @@ header {
 }
 
 /* #endregion */
+
+
+/* #region footer */
+.footer{
+    background-color: #8E69F8;
+    margin-top: 60px;
+}
+
+.inside__footer{
+    padding:41px 80px 40px 80px;
+    /*display: flex;*/
+    
+}
+
+.svg__footer{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.flex-svgtext__footer{
+    display: flex;
+    flex-direction: column;
+}
+
+.text-undersvg{
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 10px 0 0 0;
+}
+
+
+.flexmenu__footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu__footer{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+.title-menuok__footer{
+    color: #FFF;
+    text-align: left;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+}
+.item-menu__footer{
+    color: rgba(255, 255, 255, 0.80);
+    text-align: left;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.ok__footer{
+    display: flex;
+    flex-direction: column;
+    color: rgba(255, 255, 255, 0.80);
+    gap: 18px;
+   
+}
+
+.item-ok__footer{
+    color: rgba(255, 255, 255, 0.80);
+    text-align: left;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.svg-link__footer{
+    margin-top: 74px;
+    text-align: center;
+}
+
+.company__footer{
+    margin: 0;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* #endregion */
+
+.form-signin{
+    display: flex;
+    flex-direction: column;
+    margin: 188px 385px;
+    box-shadow: 0px 0px 30px 20px rgba(142, 105, 248, 0.20);
+    background: #FFF;
+    border-radius: 20px;
+    padding: 40px;
+    gap: 20px;
+    position: relative;
+}
+
+.text-signin{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.login-signin, .pass-signin{
+    border-radius: 10px;
+    border: 1px solid #1C1B71;
+    padding: 14px 0 14px 20px;
+}
+
+.login-signin{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.pass-signin{
+    color: rgba(28, 27, 113, 0.50);
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.forgotpass-signin{
+    position: absolute;
+    right: 60px;
+    top: 228px;
+    color: rgba(28, 27, 113, 0.50);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.btn-signin{
+    border-radius: 20px;
+    border: 1px solid #1C1B71;
+    background: rgba(142, 105, 248, 0.30);
+    text-align: center;
+    padding: 14px;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.or-singin{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.or-singin::before,
+.or-singin::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #8E69F8;
+}
+
+.or-singin > span{
+    
+    color: rgba(28, 27, 113, 0.70);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.btn-singup-signin{
+    border-radius: 20px;
+    border: 1px solid #1C1B71;
+    background: #8E69F8;
+    padding: 14px;
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
 
