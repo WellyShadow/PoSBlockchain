@@ -101,6 +101,10 @@ header {
     flex-direction:column;
 }
 
+.main-ok{
+    background: linear-gradient(180deg, #FFF1CC 0%, #8E69F8 74.23%);
+}
+
 /* #region section1 */
 .section1{
     background-image: url(images/airplane1.jpg);
@@ -527,7 +531,7 @@ header {
 
 /* #region section5 */
 .section5{
-    margin: 0 135px 0 135px;
+    margin: 0 135px 60px 135px;
     text-align: center;
 }
 
@@ -632,7 +636,7 @@ header {
 /* #region footer */
 .footer{
     background-color: #8E69F8;
-    margin-top: 60px;
+    /*margin-top: 60px;*/
 }
 
 .inside__footer{
@@ -732,6 +736,8 @@ header {
 
 /* #endregion */
 
+
+/* #region formsignin */
 .form-signin{
     display: flex;
     flex-direction: column;
@@ -843,5 +849,43 @@ header {
     font-weight: 600;
     line-height: normal;
     text-transform: uppercase;
+}
+
+/* #endregion */
+
+.btns-ok{
+    padding: 30px 80px 40px 80px;
+}
+
+.btn-arc,.btn-mywallet,.btn-pricealeart,.btn-addfrend,.btn-settings{
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 30px;
+    border-radius: 10px;
+    border: none;
+}
+
+.btn-mywallet:focus{
+    background: #8E69F8;
+    color: #FFF;
+}
+
+
+.btn-mywallet{
+
+}
+.btn-pricealeart{
+
+}
+.btn-addfrend{
+
+}
+.btn-settings{
+
 }
 
