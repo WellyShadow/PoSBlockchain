@@ -1,5 +1,5 @@
 from flask_classful import FlaskView, route #logic behind
-from flask import Flask, jsonify, request #app allows interact with endpoints
+from flask import Flask, jsonify, request, render_template #app allows interact with endpoints
 from BlockchainUtils import BlockchainUtils
 
 node = None
@@ -19,7 +19,13 @@ class NodeAPI(FlaskView):
 
     @route('/info', methods = ['GET'])
     def info(self):
-        return 'This is communication interface to a nodes blockcahin', 200
+        return render_template('index.html'), 200
+    
+    @route('/ok_mycryptowallet', methods = ['GET'])
+    def ok_mycryptowallet(self):
+        publicKeyString = node.wallet.publicKeyString()
+        return render_template('ok_mycryptowallet.html',publicKeyString = publicKeyString), 200
+
     
     @route('/blockchain', methods = ['GET'])
     def blockchain(self):
@@ -41,3 +47,16 @@ class NodeAPI(FlaskView):
         node.handleTransaction(transaction)
         response = {'message':'Received transaction'}
         return jsonify(response), 200
+
+    @route('/balance', methods = ['POST'])
+    def balance(self):
+        values = request.get_json()
+        publicKeyString = values['publicKeyString']
+        balance = node.blockchain.accountModel.getBalance(publicKeyString)
+        return balance, 200
+    
+    @route('/address', methods = ['GET'])
+    def address(self):
+        publicKeyString = node.wallet.publicKeyString()
+        return publicKeyString, 200
+    
