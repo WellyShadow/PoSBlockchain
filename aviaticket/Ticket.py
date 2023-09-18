@@ -1,6 +1,9 @@
-import random
+import uuid
 class Ticket():
     def __init__(self):
-        self.price = 7134
+        self.price = 10
         self.ifbuy = False
-        self.id = random.randint(1,100)
+        self.id = uuid.uuid4()
+
+    def toJson(self):
+        return self.__dict__

@@ -13,11 +13,14 @@ class Node():
         self.ip = ip
         self.port = port
         self.transactionPool = TransactionPool()
-        self.wallet = Wallet()
         self.blockchain = Blockchain()
+        self.wallet = Wallet()
         if key is not None:
             self.wallet.fromKey(key)
-
+        #Wallet.setNode(self)
+        #NodeWalletCommunication()
+    #def getBlockchain(self):
+    #    return self.blockchain
     def startP2P(self):
         self.p2p = SocketCommunication(self.ip, self.port)
         self.p2p.startSocketCommunication(self)

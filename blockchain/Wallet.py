@@ -3,12 +3,37 @@ from Cryptodome.Signature import PKCS1_v1_5
 from BlockchainUtils import BlockchainUtils
 from Transaction import Transaction
 from Block import Block
+from AccountModel import AccountModel
 
 class Wallet():
 
+    node = None
+    
     def __init__(self):
         self.keyPair = RSA.generate(2048)
-    
+        
+        #nodeWallet = NodeWalletCommunication()
+            
+
+        #Wallet.node_instance = None
+        #self.node_instance = None
+        #self.node = None
+        #self.accModel = AccountModel.get_a()
+        #self.blockchain = blockchain
+        
+    #def setAccountModel(self, account_model):
+    #    self.accModel = account_model
+    #@classmethod
+    #def setNode(cls, node):
+    #        if cls.node is None:
+    #            cls.node = node
+    #            print('in setNode',type(cls.node))
+
+    #@classmethod
+    #def getNode(cls):
+    #    print('in getNode cls',type(cls.node))
+    #    return cls.node
+
     def fromKey(self, file):
         key = ''
         with open(file, 'r') as keyfile:
@@ -45,3 +70,25 @@ class Wallet():
         signature = self.sign(block.payload())
         block.sign(signature)
         return block
+
+    #def injectblockchain(self, injectedblockchain):
+    #    global blockchain
+     #   blockchain = injectedblockchain
+    #def balance(self):
+        #self.getAccModel()
+        #publicKeyString = self.publicKeyString()
+        #print(publicKeyString)
+        #blockchain = Node.getBlockchain()
+        #self.injectblockchain(blockchain)
+        #node = Wallet.getNode()
+        #print(1)
+        #if Wallet.node_instance is not None:
+        #blockchain = Wallet.node_instance.blockchain
+        #balance = blockchain.accountModel.balances
+        #print(balance)
+        #return balance
+        #else:
+        #print("Node не был установлен в классе Wallet")
+
+        #print(balance)
+        #return balance

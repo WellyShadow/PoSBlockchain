@@ -2,12 +2,17 @@ from Block import Block
 from BlockchainUtils import BlockchainUtils
 from AccountModel import AccountModel
 from ProofOfStake import ProofOfStake
+from Airplane import Airplane
 class Blockchain():
 
     def __init__(self):
         self.blocks = [Block.genesis()]
         self.accountModel = AccountModel()
         self.pos = ProofOfStake()
+        self.airplane = Airplane()
+        #self.wallet = Wallet()
+        #self.wallet.setAccountModel(self.accountModel)
+        
 
     def addBlock(self,block):
         self.executeTransactions(block.transactions)
@@ -49,17 +54,29 @@ class Blockchain():
         if transaction.type == 'EXCHANGE':
             return True
         senderBalance =  self.accountModel.getBalance(transaction.senderPublicKey)
+        
         if senderBalance >= transaction.amount:
             return True
         else :
+            print(senderBalance, 'мало')
             return False
+
     
     def executeTransactions(self, transactions):
         for transaction in transactions:
             self.executeTransaction(transaction)
 
     def executeTransaction(self, transaction):
-        if transaction.type == 'STAKE':
+        if transaction.type == 'BUYTICKET':
+            sender = transaction.senderPublicKey
+            receiver = transaction.receiverPublicKey
+            amount = self.airplane.tickets[0].price
+
+            self.accountModel.updateBalace(sender, -amount)
+            self.accountModel.updateBalace(receiver, amount)
+            self.accountModel.updateTicket(sender,self.airplane.tickets[0].id)
+            self.airplane.tickets[0].buy()
+        elif transaction.type == 'STAKE':
             sender = transaction.senderPublicKey
             receiver = transaction.receiverPublicKey
             if sender == receiver:

@@ -1,5 +1,7 @@
 from Airplane import Airplane
 
 airplane = Airplane()
-airplane.addAirplane()
+#airplane.addAirplane()
 airplane.printTickets()
+
+#print(airplane.payload())
