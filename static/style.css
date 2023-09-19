@@ -101,7 +101,7 @@ header {
     flex-direction:column;
 }
 
-.main-ok{
+.main-ok,.main-reservation{
     background: linear-gradient(180deg, #FFF1CC 0%, #8E69F8 74.23%);
 }
 
@@ -853,13 +853,14 @@ header {
 
 /* #endregion */
 
-.btns-ok{
+/* #region okmycryptowallet*/
+.btns-ok, .btns-reservation{
     padding: 30px 80px 40px 80px;
     display: flex;
-    justify-content:center;
     gap: 5px;
+    justify-content: space-between;
 }
-.info-mywallet-ok{
+.info-mywallet-ok,.info-reservation{
     padding: 0 80px 60px 80px;
 }
 .h3__info-mywallet-ok{
@@ -873,7 +874,8 @@ header {
     margin-top: 0;
 }
 
-.btn-arc,.btn-mywallet,.btn-pricealeart,.btn-addfrend,.btn-settings{
+
+.btn-arc,.btn-mywallet,.btn-pricealeart,.btn-addfrend,.btn-settings,.btn-search,.btn-info-about-ticket,.btn-pass-info,.btn-places,.btn-review-payment{
     color: #000;
     text-align: center;
     font-family: Montserrat;
@@ -884,6 +886,7 @@ header {
     padding: 30px;
     border-radius: 10px;
     border: none;
+    flex-grow: 1;
 }
 
 .btn-mywallet:focus{
@@ -896,12 +899,14 @@ header {
 .main-info-mywallet-ok{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .actual_travel{
-    margin: 0px 68px 20px 0;
+    margin: 0px 68px 0px 0;
     background-color: #FFF;
     border-radius: 20px;
+    flex-grow: 1;
     
 }
 
@@ -994,11 +999,12 @@ header {
     background: linear-gradient(109deg, #FFF 0%, #DDD2FD 100%);
     box-shadow: 0px 0px 20px 6px rgba(142, 105, 248, 0.20);
     padding: 47px;
-
+    flex-grow: 1;
 }
 
 .top-balance{
     display: flex;
+    justify-content: space-between;
 }
 
 .nameaddress-top-balance{
@@ -1021,22 +1027,69 @@ header {
     gap: 2px;
     border-radius: 1000px;
     background: rgba(142, 105, 248, 0.40);
+    align-items: center;
     
 }
 
 .address-top-balance > p{
     margin: 0;
-    padding: 2px 16px;
+    padding: 2px 5px 2px 16px;
 }
 .address-top-balance > svg{
-    : center;
+    padding: 0px 16px 0px 0px;
 }
 
 .svg-top-balance{
     display: flex;
     margin-left: 209px;
     gap: 30px;
+    
 }
+
+.bottom-balance{
+    margin-top: 108px;
+}
+
+.h3-bottom-balance{
+    color: #1C1B71;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.balance-bottom-balance{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+}
+.topup-balance-bottom-balance{
+    display: flex;
+}
+
+.topup-bottom-balance{
+    display: inline-flex;
+    padding: 12px 18px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 40px;
+    background: #8E69F8;
+    margin: 0px 0px 0px 131px;
+    flex-grow: 1;
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+/* #endregion */
 /* #region switch-btn */
 .switch {
     position: relative;
@@ -1098,3 +1151,161 @@ header {
   }
 
 /* #endregion */
+
+
+.h3__info-reservation{
+    color: #1C1B71;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.text-some-info-reservation{
+    color: #6A6A6A;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.menu-reservation{
+    border-radius: 10px;
+    background: #FFF;
+    padding: 20px;
+}
+.title-menu-reservation{
+    margin-bottom: 25px;
+}
+.ticket-direction-menu-reservation{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+}
+
+.time-menu-reservation{
+    color: rgba(28, 27, 113, 0.50);
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0;
+}
+.choosetype-menu-reservation{
+    margin-top: 25px;
+}
+
+.radio-choosetype-menu-reservation{
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.yellow-rec-choosetype-menu-reservation{
+    border-radius: 2px;
+    background: #FFD256;
+    width: 12px;
+    height: 12px;
+}
+
+.grey-rec-choosetype-menu-reservation{
+    border-radius: 2px;
+    background: #DDD;
+    width: 12px;
+    height: 12px;
+}
+
+.instock-choosetype-menu-reservation{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 5px 0 0 0;
+}
+.instock-choosetype-menu-reservation > p{
+    margin: 0;
+    color: rgba(28, 27, 113, 0.50);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.choosed-menu-reservation{
+    border-radius: 10px;
+    background: #8E69F8;
+    padding: 20px;
+}
+.choosed-menu-reservation{
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 25px 0 25px 0;
+}
+
+.choosed-menu-reservation > svg{
+    width: 100%;
+}
+
+.chooses-ticket-menu-reservation{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+.choose-ticket-menu-reservation{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.row-choose-ticket-menu-reservation{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    
+}
+.ticket-row-choose-ticket-menu-reservation{
+    border-radius: 10px;
+    background: #FFD256;
+    padding: 22px 13px;
+
+}
+
+.number-ticket-menu-reservation > p{
+    color: #6A6A6A;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-right: 25px;
+    margin: 0;
+}
+.letters-ticket-menu-reservation{
+    display: flex;
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    gap: 43px;
+    justify-content: space-evenly;
+}
+
