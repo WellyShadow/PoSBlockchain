@@ -887,6 +887,7 @@ header {
     border-radius: 10px;
     border: none;
     flex-grow: 1;
+    background: #FFF;
 }
 
 .btn-mywallet:focus{
@@ -1282,10 +1283,13 @@ header {
     border-radius: 10px;
     background: #FFD256;
     padding: 22px 13px;
+    border: 0;
 
 }
 
-.number-ticket-menu-reservation > p{
+.number-ticket-menu-reservation{
+    display: flex;
+    flex-direction: column;
     color: #6A6A6A;
     text-align: center;
     font-family: Montserrat;
@@ -1293,8 +1297,11 @@ header {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    padding-right: 25px;
-    margin: 0;
+    margin: 140px 0px 0px 0px;
+    gap: 38px;
+}
+.number-ticket-menu-reservation > p{
+   margin: 0;
 }
 .letters-ticket-menu-reservation{
     display: flex;
@@ -1307,5 +1314,135 @@ header {
     line-height: normal;
     gap: 43px;
     justify-content: space-evenly;
+}
+
+.exit-chooses-ticket-menu-reservation{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 40px 0px 40px 0px;
+}
+
+.second-number-ticket-menu-reservation{
+    display: flex;
+    flex-direction: column;
+    color: #6A6A6A;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 10px 0px 0px 0px;
+    gap: 38px;
+}
+.second-number-ticket-menu-reservation > p{
+    margin: 0
+}
+.flex-info-reservation{
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.reservation-detail{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border-radius: 20px;
+    background: #FFF;
+    padding: 20px 10px;
+}
+
+.reservation-detail > p{
+    margin: 0;
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.pass-reservation-detail,.pac-reservation-detail,.places-reservation-detail{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    background:#EDEDED;
+    padding: 10px;
+
+}
+.pass-reservation-detail > p{
+    margin: 0;
+    
+}
+
+.info-pass-reservation-detail{
+    text-align: right;
+}
+.places-reservation-detail{
+    text-align: right;
+}
+.item-title-pass-reservation-detail,.item-info-pass-reservation-detail,.item-places-reservation-detail{
+    margin: 0;
+    color: #6A6A6A;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    
+}
+.title-title-pass-reservation-detail,.sum-info-pass-reservation-detail,.title-places-reservation-detail{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+    
+}
+
+.title-pac-reservation-detail,.price-pac-reservation-detail,.sum-places-reservation-detail{
+    margin: 0;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.sum-reservation-detail{
+    display: flex;
+    justify-content: space-between;
+}
+.title-sum-reservation-detail{
+    color: #000;
+    text-align: right;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.btn-reservation-detail{
+    border-radius: 15px;
+    background: #8E69F8;
+    border: 0;
+    padding: 13px 38px;
+    color: #FFF;
+    text-align: right;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
 }
 
