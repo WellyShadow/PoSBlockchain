@@ -18,7 +18,7 @@ class NodeAPI(FlaskView):
         global node
         node = injectednode
     
-    @route('/info', methods = ['GET'])
+    @route('', methods = ['GET'])
     def info(self):
         return render_template('index.html'), 200
     

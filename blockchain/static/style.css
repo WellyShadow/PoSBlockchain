@@ -1,0 +1,1463 @@
+body {
+    margin: 0;
+}
+/* #region header */
+
+header {
+    display: flex;
+    /*flex-direction:raw;*/
+    justify-content:space-between;
+    box-sizing: border-box;
+    margin: 0 60px;
+    height: 100px;
+}
+
+.icon {
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+    margin: 20px;
+}
+
+.name {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    background: linear-gradient(267deg, #FFD256 0%, #8E69F8 98.97%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+    margin: 35px 169px 35px 0;
+}
+
+.nav__link{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0;
+    margin: 38px 20px;
+    text-decoration: none;
+    
+}
+
+.register{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration: none;
+    margin: 35px 15px 35px 127px;
+}
+
+.inacc__header{
+    display: flex;
+    margin: 26px 20px 26px 176px;
+    gap: 14px;
+    align-items: center;
+
+}
+.inacc__header > span {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+
+.sign__button{
+    display: flex;
+    max-width:108px ;
+    margin: 25px 20px 25px 0px;
+    border: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 40px;
+    background: #8E69F8;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    flex-grow: 1;
+}
+
+/* #endregion */
+.main{
+    display: flex;
+    justify-content:space-between;
+    flex-direction:column;
+}
+
+.main-ok,.main-reservation{
+    background: linear-gradient(180deg, #FFF1CC 0%, #8E69F8 74.23%);
+}
+
+/* #region section1 */
+.section1{
+    background-image: url(images/airplane1.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    margin-bottom: 210px;
+    max-height: 90vh;
+    
+}
+
+.h2__section1{
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    margin: 112px 127px 15px 126px;
+}
+
+.h3__section1{
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    margin: 0 273px 374px 270px;
+    color: #FFD256;
+    -webkit-text-fill-color: none;
+}
+
+.buyticket__form{
+    display: flex;
+    flex-direction:column;
+    margin: 0 168px 0 168px;
+    box-shadow: 1px 2px 3px #8E69F8;
+    background: linear-gradient(0, #FFF 90%, #8E69F8 10%);;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+
+
+.choose__button{
+    border-radius: 20px 20px 0px 0px;
+    background: #8E69F8;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 25px 86px 28px 89px;
+    /*background-image: url('images/icons/Icon1.svg');*/
+    flex-grow: 1;
+    border: none;
+}
+
+.choose__button:focus{
+    background: #FFF;
+}
+
+
+
+
+.button-group{
+    display: flex;
+    flex-direction:row;
+}
+
+
+.info{
+    display: flex;
+    flex-direction:row;
+    margin: 33px 20px 31px 20px;
+}
+.item__info{
+    display: flex;
+    flex-direction:column;
+    margin-right: 20px;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    flex-grow: 1;
+}
+/*
+.to{
+    display: flex;
+    flex-direction:column;
+    margin-right: 20px
+}
+.date{
+    display: flex;
+    flex-direction:column;
+    margin-right: 20px
+}
+.pass{
+    display: flex;
+    flex-direction:column;
+    margin-right: 20px
+}*/
+/*
+.info-group{
+    display: flex;
+    justify-content:left;
+    flex-direction:row;
+    margin: 33px 285px 12px 20px;
+}
+.input-group{
+    display: flex;
+    justify-content:left;
+    flex-direction:row;
+    margin: 0 20px 31px 20px;
+}
+*/
+
+.label-info-group{
+    margin-bottom: 12px;
+    /*flex-grow: 1;*/
+}
+
+.item-input-group{
+    border-radius: 10px;
+    background: #EDEDED;
+    border: none;
+    flex-grow: 1;
+    padding: 0;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #9E9E9E;
+    padding: 20px 0px 17px 20px;
+}
+
+.fing__button{
+    display: flex;
+    align-items: center;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border-radius: 40px;
+    background: #8E69F8;
+    border:none;
+    margin: 39px 20px 0 0;
+    padding: 0 50px 0 50px;
+}
+
+/* #endregion */
+
+
+/* #region section2*/
+
+.section2{
+    margin-bottom: 115px;
+}
+.h2__section2{
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 60px;
+}
+
+
+.popular-directions{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    margin: 0 80px 0px 80px;  
+    background-color: #FFF;
+}
+
+.direction{
+    margin: 0px 20px 0px 0px;
+    border-radius: 0px 0px 20px 20px;
+    background-color: white;
+    box-shadow: #8E69F8 1px 1px 2px;
+
+}
+
+.name-direction{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 28px 0px 3px 29px;
+    margin: 0;
+}
+
+.price-direction{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 0 0 11px 30px;
+    margin: 0;
+}
+
+.moreinfo-direction{
+    color: rgba(28, 27, 113, 0.50);
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 0 0 30px 33px;
+    margin: 0;
+}
+
+/* #endregion */
+
+
+/* #region section3 */
+.section3{
+    background-color: #8E69F8;
+    
+}
+
+.h2__section3{
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    
+}
+
+.whychooseus{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 60px 288px 80px;
+}
+
+
+
+.whychooseus-item{
+    background: #FFF;
+    margin-right: 20px;
+    border-radius: 20px 20px 20px 20px;
+    width: 33%;
+    text-align: center;
+    /*max-height: 447px;*/
+    position: relative;
+    
+
+}
+.whychooseus-item::after{
+    content: url(images/icons/Group19.svg);
+    display: block;
+    position: absolute;
+    top: 90px;
+    right: -55px;
+    color: white; 
+    padding: 10px;
+    border-radius: 10px;
+    z-index: 10; 
+}
+
+.whychooseus-title{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: -0.7px;
+    margin: 31px 0 19px 0;
+}
+
+.whychooseus-text{
+    color: rgba(0, 0, 0, 0.60);
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0 21px 35px 21px;
+
+}
+
+.whychooseus-svg{
+    margin-top: 72px;
+}
+
+/* #endregion */
+
+/* #region section4 */
+.section4{
+    margin: -175px 80px 100px 80px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0px 0px 3px  #8E69F8;
+    display: block;
+    z-index:100;  
+    background-color: #FFF;
+}
+
+.icon__section4{
+    margin-top: 80px;
+}
+
+.h2__section4{
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    background: linear-gradient(267deg, #FFD256 50%, #8E69F8 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text__section4{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0 140px 0 140px;
+}
+
+.text__section4 > span{
+    color: #8E69F8;
+    font-weight: 700;
+}
+
+
+.advantages{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin: 60px 108px 60px 108px;
+    
+}
+
+.advantage{
+    background-color: #8E69F8;
+    border-radius: 20px;
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    max-width: 50%;
+}
+
+.advantage-svg{
+    margin-top: 60px;
+}
+
+.advantage-text{
+    margin: 30px 31px 60px 31px;
+}
+
+.h3__section4{
+    color: #1C1B71;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 60px 216px 50px 216px;
+}
+
+.btn__section4{
+    
+    border-radius: 40px;
+    padding: 25px 61px;
+    align-items: center;
+    gap: 20px;
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background-color: #FFF;
+    margin-bottom: 80px;
+    position: relative;
+    border:none;
+}
+.btn__section4::before{
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    bottom: -5px;
+    right: -5px;
+    background: linear-gradient(267deg, #FFD256 0%, #8E69F8 98.97%);
+    border-radius: 55px;
+    z-index: -1;
+}
+
+/* #endregion */
+
+
+/* #region section5 */
+.section5{
+    margin: 0 135px 60px 135px;
+    text-align: center;
+}
+
+
+
+.title__section5,.subtitle__section5{
+    color: #000;
+    text-align: center;
+    font-family:Montserrat;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.title__section5{
+    margin-bottom: 38px;
+}
+.subtitle__section5{
+    margin-bottom: 50px;
+}
+
+
+
+.title__section5 > span {
+    color: #8E69F8;
+}
+
+.text__section5{
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 50px;
+    
+}
+
+.svg1__section5{
+    position: relative;
+}
+
+.svg1__section5::after{
+    content: url(images/icons/Vector1.png);
+    display: block;
+    position: absolute;
+    top: 1px;
+    left: 300px;
+    padding: 10px;
+    border-radius: 10px;
+    z-index: 10; 
+}
+
+.svg2__section5{
+    position: relative;
+}
+
+.svg2__section5::after{
+    content: url(images/icons/Vector2.png);
+    display: block;
+    position: absolute;
+    top: 1px;
+    right: 100px;
+    padding: 10px;
+    border-radius: 10px;
+    z-index: 10; 
+}
+
+
+
+.final__section5{
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.btn__section5{
+    padding: 16px 34px;
+    border-radius: 100px;
+    border: 1px solid #000;
+    background: linear-gradient(92deg, #FFD256 0%, #8E69F8 100%);
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+/* #endregion */
+
+
+/* #region footer */
+.footer{
+    background-color: #8E69F8;
+    /*margin-top: 60px;*/
+}
+
+.inside__footer{
+    padding:41px 80px 40px 80px;
+    /*display: flex;*/
+    
+}
+
+.svg__footer{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.flex-svgtext__footer{
+    display: flex;
+    flex-direction: column;
+}
+
+.text-undersvg{
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 10px 0 0 0;
+}
+
+
+.flexmenu__footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu__footer{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+.title-menuok__footer{
+    color: #FFF;
+    text-align: left;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+}
+.item-menu__footer{
+    color: rgba(255, 255, 255, 0.80);
+    text-align: left;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.ok__footer{
+    display: flex;
+    flex-direction: column;
+    color: rgba(255, 255, 255, 0.80);
+    gap: 18px;
+   
+}
+
+.item-ok__footer{
+    color: rgba(255, 255, 255, 0.80);
+    text-align: left;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.svg-link__footer{
+    margin-top: 74px;
+    text-align: center;
+}
+
+.company__footer{
+    margin: 0;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* #endregion */
+
+
+/* #region formsignin */
+.form-signin,.form-create_wallet{
+    display: flex;
+    flex-direction: column;
+    margin: 188px 385px;
+    box-shadow: 0px 0px 30px 20px rgba(142, 105, 248, 0.20);
+    background: #FFF;
+    border-radius: 20px;
+    padding: 40px;
+    gap: 20px;
+    position: relative;
+}
+
+.text-signin,.text-create_wallet{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.login-signin, .pass-signin{
+    border-radius: 10px;
+    border: 1px solid #1C1B71;
+    padding: 14px 0 14px 20px;
+}
+
+.login-signin{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.pass-signin{
+    color: rgba(28, 27, 113, 0.50);
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.forgotpass-signin{
+    position: absolute;
+    right: 60px;
+    top: 228px;
+    color: rgba(28, 27, 113, 0.50);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.btn-signin{
+    border-radius: 20px;
+    border: 1px solid #1C1B71;
+    background: rgba(142, 105, 248, 0.30);
+    text-align: center;
+    padding: 14px;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.or-singin{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.or-singin::before,
+.or-singin::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #8E69F8;
+}
+
+.or-singin > span{
+    
+    color: rgba(28, 27, 113, 0.70);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.btn-singup-signin,.btn-create_wallet{
+    border-radius: 20px;
+    border: 1px solid #1C1B71;
+    background: #8E69F8;
+    padding: 14px;
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+/* #endregion */
+
+/* #region okmycryptowallet*/
+.btns-ok, .btns-reservation{
+    padding: 30px 80px 40px 80px;
+    display: flex;
+    gap: 5px;
+    justify-content: space-between;
+}
+.info-mywallet-ok,.info-reservation{
+    padding: 0 80px 60px 80px;
+}
+.h3__info-mywallet-ok{
+    color: #1C1B71;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 57px;
+    margin-top: 0;
+}
+
+
+.btn-arc,.btn-mywallet,.btn-pricealeart,.btn-addfrend,.btn-settings,.btn-search,.btn-info-about-ticket,.btn-pass-info,.btn-places,.btn-review-payment{
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 30px;
+    border-radius: 10px;
+    border: none;
+    flex-grow: 1;
+    background: #FFF;
+}
+
+.btn-mywallet:focus{
+    background: #8E69F8;
+    color: #FFF;
+}
+
+
+
+.main-info-mywallet-ok{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.actual_travel{
+    margin: 0px 68px 0px 0;
+    background-color: #FFF;
+    border-radius: 20px;
+    flex-grow: 1;
+    
+}
+
+.price-actual_travel{
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+    background: rgba(142, 105, 248, 0.30);
+}
+
+.price-actual_travel > p{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 20px 232px 20px 101px;
+    color: #000;
+    text-align: right;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    justify-content: center;
+}
+
+.price-actual_travel > span {
+    display: flex;
+    flex-direction: column;
+    padding: 27px 20px 27px 0;
+    color: #1C1B71;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    justify-content: center;
+}
+
+.info-actual_travel{
+    display: flex;
+    justify-content: center;
+    margin: 30px 40px 0 40px;
+}
+.from-info-actual_travel{
+    text-align: left;
+}
+
+.between-info-actual_travel{
+    position: relative;
+    margin: 40px 0px 70px 0px;
+}
+.between-info-actual_travel > p{
+    position: absolute;
+    margin: 0;
+    transform: translate(70%, -140%);
+}
+
+.to-info-actual_travel{
+    text-align: right;
+}
+
+.time-info-actual_travel{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    margin: 0;
+}
+.city-info-actual_travel{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+}
+
+.date-info-actual_travel{
+    color: #6A6A6A;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+}
+
+.balance{
+    border-radius: 40px;
+    background: linear-gradient(109deg, #FFF 0%, #DDD2FD 100%);
+    box-shadow: 0px 0px 20px 6px rgba(142, 105, 248, 0.20);
+    padding: 47px;
+    flex-grow: 1;
+}
+
+.top-balance{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nameaddress-top-balance{
+    margin-left: 30px;
+}
+
+.name-top-balance{
+    margin: 0;
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.address-top-balance{
+    display: flex;
+    gap: 2px;
+    border-radius: 1000px;
+    background: rgba(142, 105, 248, 0.40);
+    align-items: center;
+    
+}
+
+.address-top-balance > p{
+    margin: 0;
+    padding: 2px 5px 2px 16px;
+}
+.address-top-balance > svg{
+    padding: 0px 16px 0px 0px;
+}
+
+.svg-top-balance{
+    display: flex;
+    margin-left: 209px;
+    gap: 30px;
+    
+}
+
+.bottom-balance{
+    margin-top: 108px;
+}
+
+.h3-bottom-balance{
+    color: #1C1B71;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.balance-bottom-balance{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+}
+.topup-balance-bottom-balance{
+    display: flex;
+}
+
+.topup-bottom-balance{
+    display: inline-flex;
+    padding: 12px 18px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 40px;
+    background: #8E69F8;
+    margin: 0px 0px 0px 131px;
+    flex-grow: 1;
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+/* #endregion */
+/* #region switch-btn */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin: 30px 40px 30px 0
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {display:none;}
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #8E69F8;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #8E69F8;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+/* #endregion */
+
+/* #region reservation places*/
+.h3__info-reservation{
+    color: #1C1B71;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.text-some-info-reservation{
+    color: #6A6A6A;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.menu-reservation{
+    border-radius: 10px;
+    background: #FFF;
+    padding: 20px;
+}
+.title-menu-reservation{
+    margin-bottom: 25px;
+}
+.ticket-direction-menu-reservation{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+}
+
+.time-menu-reservation{
+    color: rgba(28, 27, 113, 0.50);
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0;
+}
+.choosetype-menu-reservation{
+    margin-top: 25px;
+}
+
+.radio-choosetype-menu-reservation{
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.yellow-rec-choosetype-menu-reservation{
+    border-radius: 2px;
+    background: #FFD256;
+    width: 12px;
+    height: 12px;
+}
+
+.grey-rec-choosetype-menu-reservation{
+    border-radius: 2px;
+    background: #DDD;
+    width: 12px;
+    height: 12px;
+}
+
+.instock-choosetype-menu-reservation{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 5px 0 0 0;
+}
+.instock-choosetype-menu-reservation > p{
+    margin: 0;
+    color: rgba(28, 27, 113, 0.50);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.choosed-menu-reservation{
+    border-radius: 10px;
+    background: #8E69F8;
+    padding: 20px;
+}
+.choosed-menu-reservation{
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 25px 0 25px 0;
+}
+
+.choosed-menu-reservation > svg{
+    width: 100%;
+}
+
+.chooses-ticket-menu-reservation{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+.choose-ticket-menu-reservation{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.row-choose-ticket-menu-reservation{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    
+}
+.ticket-row-choose-ticket-menu-reservation{
+    border-radius: 10px;
+    background: #FFD256;
+    padding: 22px 13px;
+    border: 0;
+
+}
+
+.number-ticket-menu-reservation{
+    display: flex;
+    flex-direction: column;
+    color: #6A6A6A;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 140px 0px 0px 0px;
+    gap: 38px;
+}
+.number-ticket-menu-reservation > p{
+   margin: 0;
+}
+.letters-ticket-menu-reservation{
+    display: flex;
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    gap: 43px;
+    justify-content: space-evenly;
+}
+
+.exit-chooses-ticket-menu-reservation{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 40px 0px 40px 0px;
+}
+
+.second-number-ticket-menu-reservation{
+    display: flex;
+    flex-direction: column;
+    color: #6A6A6A;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 10px 0px 0px 0px;
+    gap: 38px;
+}
+.second-number-ticket-menu-reservation > p{
+    margin: 0
+}
+.flex-info-reservation{
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.reservation-detail{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border-radius: 20px;
+    background: #FFF;
+    padding: 20px 10px;
+}
+
+.reservation-detail > p{
+    margin: 0;
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.pass-reservation-detail,.pac-reservation-detail,.places-reservation-detail{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    background:#EDEDED;
+    padding: 10px;
+
+}
+.pass-reservation-detail > p{
+    margin: 0;
+    
+}
+
+.info-pass-reservation-detail{
+    text-align: right;
+}
+.places-reservation-detail{
+    text-align: right;
+}
+.item-title-pass-reservation-detail,.item-info-pass-reservation-detail,.item-places-reservation-detail{
+    margin: 0;
+    color: #6A6A6A;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    
+}
+.title-title-pass-reservation-detail,.sum-info-pass-reservation-detail,.title-places-reservation-detail{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+    
+}
+
+.title-pac-reservation-detail,.price-pac-reservation-detail,.sum-places-reservation-detail{
+    margin: 0;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.sum-reservation-detail{
+    display: flex;
+    justify-content: space-between;
+}
+.title-sum-reservation-detail{
+    color: #000;
+    text-align: right;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.btn-reservation-detail{
+    border-radius: 15px;
+    background: #8E69F8;
+    border: 0;
+    padding: 13px 38px;
+    color: #FFF;
+    text-align: right;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+/* #endregion */
+
+.forgotpass-create_wallet{
+    margin-top: 43px ;
+    color: rgba(28, 27, 113, 0.50);
+    text-align: right;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+}
+.text-create_wallet{
+    text-align: center;
+}

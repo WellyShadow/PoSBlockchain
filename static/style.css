@@ -738,7 +738,7 @@ header {
 
 
 /* #region formsignin */
-.form-signin{
+.form-signin,.form-create_wallet{
     display: flex;
     flex-direction: column;
     margin: 188px 385px;
@@ -750,7 +750,7 @@ header {
     position: relative;
 }
 
-.text-signin{
+.text-signin,.text-create_wallet{
     color: #000;
     font-family: Montserrat;
     font-size: 25px;
@@ -836,7 +836,7 @@ header {
     line-height: normal;
 }
 
-.btn-singup-signin{
+.btn-singup-signin,.btn-create_wallet{
     border-radius: 20px;
     border: 1px solid #1C1B71;
     background: #8E69F8;
@@ -1153,7 +1153,7 @@ header {
 
 /* #endregion */
 
-
+/* #region reservation places*/
 .h3__info-reservation{
     color: #1C1B71;
     font-family: Montserrat;
@@ -1445,4 +1445,19 @@ header {
     font-weight: 600;
     line-height: normal;
 }
+/* #endregion */
 
+.forgotpass-create_wallet{
+    margin-top: 43px ;
+    color: rgba(28, 27, 113, 0.50);
+    text-align: right;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+}
+.text-create_wallet{
+    text-align: center;
+}
