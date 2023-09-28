@@ -1,7 +1,9 @@
 from flask_classful import FlaskView, route #logic behind
-from flask import Flask, jsonify, request, render_template #app allows interact with endpoints
+from flask import Flask, jsonify, request, render_template, redirect, url_for #app allows interact with endpoints
 from BlockchainUtils import BlockchainUtils
 import urllib.parse
+from Wallet import Wallet
+import requests
 
 node = None
 
@@ -20,25 +22,30 @@ class NodeAPI(FlaskView):
     
     @route('', methods = ['GET'])
     def info(self):
+        global company 
+        company = Wallet()
         return render_template('index.html'), 200
     
     @route('/ok_mycryptowallet')
-    def ok_mycryptowallet(self):
+    def ok_mycryptowallet(self, publicKeyString=0):
+        outputResult = 0
+        balance = 0
         publicKeyString = request.args.get('publicKeyString')
-        lines = publicKeyString.split('\\n')
-        for i in range(2, len(lines)-2):
-            lines[i] = lines[i].replace(' ', '+')
-        result = '\n'.join(lines)
-        balance = node.blockchain.accountModel.getBalance(result)
+        if publicKeyString is not None:
+            lines = publicKeyString.split('\\n')
+            for i in range(2, len(lines)-2):
+                lines[i] = lines[i].replace(' ', '+')
+            result = '\n'.join(lines)
+            balance = node.blockchain.accountModel.getBalance(result)
 
-        begin_marker = "-----BEGIN PUBLIC KEY-----"
-        end_marker = "-----END PUBLIC KEY-----"
-        start_index = result.find(begin_marker) + len(begin_marker)
-        end_index = result.find(end_marker)
-        public_key_data = result[start_index:end_index]
-        first_four_chars = public_key_data[:5]
-        last_four_chars = public_key_data[-5:]
-        outputResult = first_four_chars + "-" + last_four_chars
+            begin_marker = "-----BEGIN PUBLIC KEY-----"
+            end_marker = "-----END PUBLIC KEY-----"
+            start_index = result.find(begin_marker) + len(begin_marker)
+            end_index = result.find(end_marker)
+            public_key_data = result[start_index:end_index]
+            first_four_chars = public_key_data[:5]
+            last_four_chars = public_key_data[-5:]
+            outputResult = first_four_chars + "-" + last_four_chars
         return render_template('ok_mycryptowallet.html',publicKeyString = outputResult,balance = balance), 200
 
     
@@ -95,3 +102,40 @@ class NodeAPI(FlaskView):
         print(type(publicKeyString))
         balance = node.blockchain.accountModel.getBalance(publicKeyString)
         return str(balance), 200
+    
+    @route('/signin', methods = ['GET'])
+    def signin(self):
+        return render_template('sign_in.html')
+    
+    @route('/reg', methods = ['GET'])
+    def reg(self):
+        return render_template('create_wallet.html')
+    
+    @route('/createwallet')
+    def createwallet(self):
+        wallet = Wallet()
+        publicKeyString = wallet.publicKeyString()
+        return redirect (url_for('NodeAPI:ok_mycryptowallet',publicKeyString = publicKeyString))
+    
+    @route('/tx')
+    def tx(self):
+        publicKeyString = request.args.get('publicKeyString')
+        transaction = company.createTransaction(publicKeyString, 40, 'EXCHANGE')
+        url = 'http://localhost:5000/transaction'
+        package = {'transaction': BlockchainUtils.encode(transaction)}
+        response = requests.post(url, json = package)
+        return render_template('reservation_places.html')
+
+    
+    @route('/reservationplaces')
+    def reservationplaces(self):
+        publicKeyString = request.args.get('publicKeyString')
+        if publicKeyString is not None:
+            lines = publicKeyString.split('\\n')
+            for i in range(2, len(lines)-2):
+                lines[i] = lines[i].replace(' ', '+')
+            publicKeyString = '\n'.join(lines)
+            return redirect (url_for('NodeAPI:tx', publicKeyString = publicKeyString))
+        return render_template('reservation_places.html')
+    
+    

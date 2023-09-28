@@ -17,16 +17,87 @@
         <a href="" class = "nav__link">Про авіакомпанію</a>
         <a href="" class = "nav__link">Контакти</a>
 
-        <a href="" class = "register">Реєстрація</a>
-        <button class = "sign__button">Вхід</button>
+        <a href="" class = "inacc__header"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+            <path d="M0 0H48V48H0V0Z" fill="white" fill-opacity="0.01"/>
+            <path d="M10 38C10.3443 32.974 14.6872 29 19.9942 29H28.0071C33.3071 29 37.6456 32.9635 38 37.98" fill="#FFD256"/>
+            <path d="M10 38C10.3443 32.974 14.6872 29 19.9942 29H28.0071C33.3071 29 37.6456 32.9635 38 37.98" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M24.0001 44C35.0458 44 44.0001 35.0457 44.0001 24C44.0001 12.9543 35.0458 4 24.0001 4C12.9544 4 4.00006 12.9543 4.00006 24C4.00006 35.0457 12.9544 44 24.0001 44Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M24.0001 23.0001C26.7615 23.0001 29.0001 20.7615 29.0001 18.0001C29.0001 15.2387 26.7615 13.0001 24.0001 13.0001C21.2387 13.0001 19.0001 15.2387 19.0001 18.0001C19.0001 20.7615 21.2387 23.0001 24.0001 23.0001Z" fill="#FFD256" stroke="black" stroke-width="2" stroke-linejoin="round"/>
+            </svg> <span>Прізвище Ім’я</span></a>
     </header>
 
-    <main class = "main">
-        <section class = "create_wallet">
-            <div class = "form-create_wallet" action="">
-                <p class = "text-create_wallet">Просто натисніть на кнопку нижче, і ми<br> згенеруємо для Вас обліковий запис</p>
-                <button class = "btn-create_wallet" onclick="window.location.href = 'createwallet'">створити обліковий запис</button>
-                <a class = "forgotpass-create_wallet"href="">Як це працює?</a> 
+    <main class = "main-reservation">
+        <section class = "btns-reservation">
+            <button class = "btn-search">Пошук</button>
+            <button class = "btn-info-about-ticket">Інформація про білет</button>
+            <button class = "btn-pass-info">Дані про пасажира</button>
+            <button class = "btn-places">Місця</button>
+            <button class = "btn-review-payment">Огляд та оплата</button>
+        </section>
+        <section class = "info-order">
+            <div class = "title-order"> 
+                <h3 class = "h3__order">Лондон — Париж</h3>
+                <p class = "some-info-order">  9 год. 25 хв.</p>
+            </div>
+            <div class = "main-order">
+                <div class = "ticket-order">
+                    <div class = "upper-ticket-order">
+                        <div class = "title-ticket-order">
+                            <p class = "company-title-ticket-order">American Airline</p>
+                            <p class = "time-title-ticket-order">9год 25хв  в польоті</p>
+                        </div>
+                        <button class = "btn-upper-ticket-order">Детальніше</button>
+                    </div>
+                    <div class = "bottom-ticket-order">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="29" height="98" viewBox="0 0 29 98" fill="none">
+                            <path d="M14.5 28L14.5 71" stroke="#8E69F8" stroke-width="2"/>
+                            <path d="M29 14.5C29 22.5081 22.5081 29 14.5 29C6.49187 29 0 22.5081 0 14.5C0 6.49187 6.49187 0 14.5 0C22.5081 0 29 6.49187 29 14.5Z" fill="#8E69F8"/>
+                            <path d="M21 14.5C21 18.0899 18.0899 21 14.5 21C10.9101 21 8 18.0899 8 14.5C8 10.9101 10.9101 8 14.5 8C18.0899 8 21 10.9101 21 14.5Z" fill="white"/>
+                            <path d="M29 83.5C29 91.5081 22.5081 98 14.5 98C6.49187 98 0 91.5081 0 83.5C0 75.4919 6.49187 69 14.5 69C22.5081 69 29 75.4919 29 83.5Z" fill="#8E69F8"/>
+                            <path d="M21 83.5C21 87.0899 18.0899 90 14.5 90C10.9101 90 8 87.0899 8 83.5C8 79.9101 10.9101 77 14.5 77C18.0899 77 21 79.9101 21 83.5Z" fill="white"/>
+                          </svg>
+                        <div>
+                            <div>
+                                <p class = "time-bottom-ticket-order">09:00</p>
+                                <p class = "date-bottom-ticket-order">чтв, 10 серп.</p>
+                            </div>
+                            <div>
+                                <p class = "time-bottom-ticket-order">22:15</p>
+                                <p class = "date-bottom-ticket-order">чтв, 10 серп.</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <p class = "city-bottom-ticket-order">Лондон</p>
+                                <p class = "airport-bottom-ticket-order">Лутон, LTN</p>
+                            </div>
+                            <div>
+                                <p class = "city-bottom-ticket-order">Париж</p>
+                                <p class = "airport-bottom-ticket-order">Орлі, ORY</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class = "reservation-detail">
+                    <p>Деталі бронювання</p>
+                    <div class = "pass-reservation-detail">
+                        <div class = "title-pass-reservation-detail">
+                            <p class = "title-title-pass-reservation-detail">1 Пасажир</p> 
+                            <p class = "item-title-pass-reservation-detail">Багаж 23 кг</p> 
+                            <p class = "item-title-pass-reservation-detail">Вартість квитка</p> 
+                        </div>
+                        <div class = "info-pass-reservation-detail">
+                            <p class = "sum-info-pass-reservation-detail">₴7 140</p> 
+                            <p class = "item-info-pass-reservation-detail">Безкоштовно</p> 
+                            <p class = "item-info-pass-reservation-detail">₴7 140</p> 
+                        </div>
+                    </div>
+                    <div class = "sum-reservation-detail">
+                        <p class = "title-sum-reservation-detail">Всього</p>
+                        <p class = "title-sum-reservation-detail">₴7 140</p>
+                    </div>
+                    <button class = "btn-reservation-detail">Продовжити</button>
+                </div>
             </div>
         </section>
     </main>

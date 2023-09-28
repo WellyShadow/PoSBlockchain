@@ -911,7 +911,7 @@ header {
     
 }
 
-.price-actual_travel{
+.price-actual_travel,.title-actual_travel{
     display: flex;
     flex-direction: row;
     border-radius: 20px;
@@ -1099,6 +1099,8 @@ header {
     height: 34px;
     margin: 30px 40px 30px 0
   }
+
+
   
   /* Hide default HTML checkbox */
   .switch input {display:none;}
@@ -1176,6 +1178,7 @@ header {
     border-radius: 10px;
     background: #FFF;
     padding: 20px;
+    flex-grow: 1;
 }
 .title-menu-reservation{
     margin-bottom: 25px;
@@ -1267,6 +1270,7 @@ header {
     display: flex;
     flex-direction: row;
     gap: 40px;
+    justify-content: center;
 }
 .choose-ticket-menu-reservation{
     display: flex;
@@ -1346,6 +1350,7 @@ header {
     display: flex;
     gap: 30px;
     align-items: flex-start;
+    justify-content: space-between;
 }
 
 .reservation-detail{
@@ -1355,6 +1360,7 @@ header {
     border-radius: 20px;
     background: #FFF;
     padding: 20px 10px;
+    flex-grow: 1;
 }
 
 .reservation-detail > p{
@@ -1438,7 +1444,7 @@ header {
     border: 0;
     padding: 13px 38px;
     color: #FFF;
-    text-align: right;
+    text-align: center;
     font-family: Montserrat;
     font-size: 20px;
     font-style: normal;
@@ -1446,6 +1452,9 @@ header {
     line-height: normal;
 }
 /* #endregion */
+
+
+/* #region createwallet */
 
 .forgotpass-create_wallet{
     margin-top: 43px ;
@@ -1461,3 +1470,828 @@ header {
 .text-create_wallet{
     text-align: center;
 }
+/* #endregion */
+
+
+/* #region reservation */
+.search-reservation{
+    display: flex;
+    padding: 30px 80px;
+    gap: 8px;
+    justify-content: space-between;
+}
+.search-reservation > div{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background: #FFF;
+    padding: 10px 20px;
+    justify-content: space-evenly;
+    max-width: 207px;
+    max-height: 80px;
+    flex-grow: 1;
+
+}
+
+.search-reservation > button{
+
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border-radius: 10px;
+    background: #FFF;
+    border: 0;
+    max-width: 207px;
+    max-height: 80px;
+    flex-grow: 1;
+}
+
+.search-reservation > button:focus{
+    background: #8E69F8;
+    color: #FFF;
+}
+
+.search-reservation > div >p{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+}
+
+.search-reservation > div >input{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border-width:0;
+}
+
+.search-reservation > div >select{
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border-width:0;
+}
+
+.choose-date{
+    display: flex;
+    padding: 40px 80px;
+    gap: 5px;
+    justify-content: space-evenly
+}
+.data-choose-date{
+    display: flex;
+    border-radius: 20px;
+    background: #FFF;
+}
+.data-choose-date > div{
+    padding: 20px 63px;
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.data-choose-date > div > p{
+    margin: 0;
+    padding: 0;
+}
+.price-data-choose-date{
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.choosen-data-choose-date{
+    border-radius: 20px;
+    background: #8E69F8;
+}
+
+.choose-tickets{
+    display: flex;
+    padding: 30px 80px;
+    justify-content: space-evenly;
+}
+
+
+.filters-choose-ticket{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-right: 40px;
+}
+.baggage-filters-choose-ticket,.transfer-filters-choose-ticket,.departure-filters-choose-ticket,.aviacompany-filters-choose-ticket,.class-filters-choose-ticket{
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    background: #FFF;
+    padding: 25px 40px;
+    gap: 8px;
+}
+.transfer-filters-choose-ticket> div {
+    display: flex;
+    
+    
+}
+.baggage-filters-choose-ticket > div{
+    display: flex;
+}
+
+.baggage-filters-choose-ticket > div > p{
+    margin: 0;
+    color: #000;
+    text-align: right;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.baggage-filters-choose-ticket > p{
+    margin: 0;
+    padding-bottom: 7px;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.transfer-filters-choose-ticket > div > p{
+    margin: 0;
+    color: #000;
+    text-align: right;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.transfer-filters-choose-ticket > p{
+    margin: 0;
+    padding-bottom: 7px;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.transfer-filters-choose-ticket > span{
+    padding: 18px 0;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.numbers-for-rangeList{
+    display: flex;
+    justify-content: space-between;
+}
+
+.numbers-for-rangeList > p{
+    color: #000;
+    text-align: right;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+}
+.rangeList-transfer-filters-choose-ticket{
+    display: flex;
+    flex-direction: column;
+}
+
+.rangeList-transfer-filters-choose-ticket > input{
+    width: 100%;
+    -webkit-appearance: none;
+}
+.rangeList-transfer-filters-choose-ticket > input::-webkit-slider-runnable-track {
+    border-radius: 10px;
+    height: 4px;
+    background-color: rgba(142, 105, 248, 0.40);
+}
+.rangeList-transfer-filters-choose-ticket > input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background-color: #8E69F8;
+    width: 13px;
+    height: 13px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: -5px;
+    }
+    
+.departure-filters-choose-ticket > p{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0;
+}
+
+.departure-filters-choose-ticket > span{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.aviacompany-filters-choose-ticket{
+    display: flex;
+    gap: 7px;
+}
+
+.checkbox-aviacompany-filters-choose-ticket{
+    display: flex;
+}
+.aviacompany-filters-choose-ticket > p{
+    margin: 0;
+    padding-bottom: 7px;
+}
+.aviacompany-filters-choose-ticket > div >p{
+    margin: 0;
+}
+
+.checkboxes-search-aviacompany-filters-choose-ticket{
+    margin: 0 40px 28px 40px;
+}
+.checkbox-search-aviacompany-filters-choose-ticket{
+    display: flex;
+    justify-content: space-between;
+}
+.checkbox-search-aviacompany-filters-choose-ticket>p{
+    margin: 0;
+    margin-bottom: 7px;
+}
+
+.flex-checkbox-search-aviacompany-filters-choose-ticket{
+    display: flex;
+}
+.flex-checkbox-search-aviacompany-filters-choose-ticket>p{
+    margin: 0;
+    margin-bottom: 7px;
+}
+.flex-checkbox-search-aviacompany-filters-choose-ticket>input{
+    margin: 0;
+    margin-bottom: 7px;
+    margin-right: 6px;
+}
+.search-aviacompany-filters-choose-ticket{
+    border-radius: 20px;
+    background:#EDEDED;
+    margin: 0 -40px -25px -40px;
+}
+.field-search-aviacompany-filters-choose-ticket{
+    text-align: center;
+    position: relative;
+}
+.field-search-aviacompany-filters-choose-ticket > form{
+    margin-top: 28px;
+    margin-bottom: 14px;
+}
+.field-search-aviacompany-filters-choose-ticket > form > input{
+    border-radius: 20px;
+    border: 2px solid #8E69F8;
+    width: 75%;
+    padding: 9px;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.icon-field-search-aviacompany-filters-choose-ticket{
+    position: absolute;
+    top:10px;
+    right: 60px;
+}
+
+.more-search-aviacompany-filters-choose-ticket{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+    text-decoration:none;
+    color: rgba(0, 0, 0, 0.70);
+    text-align: right;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.aviacompany-filters-choose-ticket > p{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.checkbox-aviacompany-filters-choose-ticket > p{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.checkbox-search-aviacompany-filters-choose-ticket > p{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.flex-checkbox-search-aviacompany-filters-choose-ticket > p{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+.class-filters-choose-ticket > p {
+    margin: 0;
+    padding-bottom: 18px;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.checkbox-class-filters-choose-ticket{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.checkbox-class-filters-choose-ticket > div {
+    display: flex;
+    gap: 6px;
+}
+
+.checkbox-class-filters-choose-ticket > p {
+    margin: 0;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.checkbox-class-filters-choose-ticket > div >p {
+    margin: 0;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.checkbox-class-filters-choose-ticket > div > input {
+    margin: 0;
+}
+
+.ticket-choose-tickets{
+    display: flex;
+}
+
+.price-ticket-choose-tickets{
+    border-radius: 20px;
+    background: rgba(142, 105, 248, 0.30);
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding: 24px 74px;
+    margin: 0;
+}
+
+.checkbox-ticket-choose-tickets{
+    display: flex;
+}
+.panel-ticket-choose-tickets{
+    border-radius: 20px;
+    background: #FFF;
+}
+.baggage-ticket-choose-tickets{
+    display: flex;
+    justify-content: space-between;
+}
+
+.baggage-ticket-choose-tickets > span{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 20px;
+    color: #1C1B71;
+
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.btn-panel-ticket-choose-tickets{
+    border-radius: 10px;
+    background: #8E69F8;
+    padding: 16px 25px;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 20px;
+    border: 0;
+}
+
+.ticket-choose-tickets{
+    gap:4px;
+    margin-bottom: 10px;
+}
+
+
+
+
+.company-ticket-choose-tickets{
+    padding: 30px 40px;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.cheapest-ticket-choose-tickets{
+    padding: 30px 40px;
+    color: #42AB4D;
+    text-align: right;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.title-actual_travel{
+    justify-content: space-between;
+}
+
+
+/* #endregion */
+
+
+/* #region order */
+.info-order{
+    padding: 0 80px 80px 80px;
+}
+.title-order{
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    
+}
+
+.h3__order{
+    color: #1C1B71;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.some-info-order{
+    color: rgba(28, 27, 113, 0.70);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.ticket-order{
+    border-radius: 20px;
+    background: #FFF;
+    padding: 25px;
+    flex-grow: 1;
+}
+
+.main-order{
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.upper-ticket-order{
+    display: flex;
+    justify-content: space-between;
+    gap:400px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.btn-upper-ticket-order{
+    display: inline-flex;
+    padding: 5px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 50px;
+    background: #8E69F8;
+    border: 0;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.company-title-ticket-order{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+}
+
+.time-title-ticket-order{
+    color: #6A6A6A;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+}
+
+.bottom-ticket-order{
+    display: flex;
+    gap: 20px;
+}
+
+.time-bottom-ticket-order{
+    margin: 0;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.date-bottom-ticket-order{
+    margin: 0;
+    color: #6A6A6A;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+.city-bottom-ticket-order{
+    margin: 0;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.airport-bottom-ticket-order{
+    margin: 0;
+    color: #6A6A6A;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+/* #endregion */
+
+/* #region aboutpass*/
+
+.form-reservation-aboutpass{
+    border-radius: 10px;
+    background: #FFF;
+    padding: 40px;
+    margin-bottom: 25px;
+}
+
+.flex-form-reservation-aboutpass{
+    display: flex;
+    flex-direction:row;
+    gap:15px;
+    margin-bottom: 25px;
+}
+.email-form-reservation-aboutpass,.name-form-reservation-aboutpass,.surname-form-reservation-aboutpass,.number-form-reservation-aboutpass{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.pass-form-reservation-aboutpass{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.enddate-form-reservation-aboutpass{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+}
+.nationality-form-reservation-aboutpass{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+}
+.sex-form-reservation-aboutpass{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.birthday-form-reservation-aboutpass{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 10;
+}
+
+.input-form-reservation-aboutpass{
+    border-radius: 15px;
+    border: 2px solid #8E69F8;
+    padding: 20px;
+}
+
+.input-form-reservation-aboutpass{
+    color: #6A6A6A;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.label-form-reservation-aboutpass{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.btn-form-reservation-aboutpass{
+    padding: 15px 18px;
+    border-radius: 15px;
+    background: rgba(255, 210, 86, 0.50);
+    color: #000;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: 0;
+}
+.forbtn-form-reservation-aboutpass{
+    display: flex;
+    justify-content: flex-end;
+}
+.reservation-aboutpass{
+    flex-grow: 1;
+}
+
+.pac-servicepac-reservation-aboutpass{
+    border-radius: 10px;
+    background: #FFF;
+    padding: 25px;
+    margin-bottom: 15px;
+}
+
+.pac-servicepac-reservation-aboutpass > svg{
+    
+    width: 100%;
+}
+.top-pac-servicepac-reservation-aboutpass{
+    display: flex;
+    justify-content: space-between;
+}
+
+.title-top-pac-servicepac-reservation-aboutpass{
+    margin: 0;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.flex-top-pac-servicepac-reservation-aboutpass{
+    display: inline-flex;
+    margin-bottom: 5px;
+}
+
+.flex-top-pac-servicepac-reservation-aboutpass > label{
+    color: #000;
+    text-align: right;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.flex-top-pac-servicepac-reservation-aboutpass > input{
+    fill: #FFF;
+    stroke-width: 1.5px;
+    stroke: #8E69F8;
+    width: 21px;
+    height: 21px;
+}
+
+
+
+.info-top-pac-servicepac-reservation-aboutpass{
+    margin: 0;
+    color: #6A6A6A;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.bottom-pac-servicepac-reservation-aboutpass{
+    display: flex;
+    flex-direction: column;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    gap: 5px;
+
+}
+
+.bottom-pac-servicepac-reservation-aboutpass > p{
+    margin: 0;
+}
+/* #endregion */
