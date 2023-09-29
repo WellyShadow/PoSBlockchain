@@ -2843,3 +2843,24 @@ header {
     justify-content: space-between;
 }
 /* #endregion */
+
+/* #region travelhistory*/
+.travelhistory-ok{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 80px;
+    gap:20px;
+}
+.travelhistory-ok__h3{
+    display: flex;
+    align-items: center;
+    color: #1C1B71;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0;
+}
+
+/* #endregion */
