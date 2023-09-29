@@ -2651,3 +2651,195 @@ header {
 }
 
 /* #endregion */
+
+/* #region completetx */ 
+.complete-tx{
+    padding: 80px 297px;
+}
+.svg-complete-tx{
+    text-align: center;
+}
+
+
+.complete-tx__h2{
+    color: #413071;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.complete-tx__h3{
+    color: rgba(65, 48, 113, 0.60);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.form-complete-tx{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 0px 30px 20px rgba(142, 105, 248, 0.20);
+    padding: 55px 88px;
+    gap: 10px;
+
+}
+
+.title-form-complete-tx{
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.top-form-complete-tx{
+    display: flex;
+    border-radius: 5px;
+    background: #EDEDED;
+    align-items: center;
+    padding: 20px 25px;
+}
+
+.horizontal-purplerec{
+    
+    background: #8E69F8;
+    width: 2px;
+    height: 57px;
+    margin: 0 15px;
+    
+}
+
+.detail-top-form-complete-tx{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.staticdetail-top-form-complete-tx{
+    margin: 0;
+    color: #6A6A6A;
+    
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.dymanicdetail-top-form-complete-tx{
+    margin: 0;
+    color: #000;
+    
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.bottom-form-complete-tx{
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    background: #EDEDED;
+    padding: 30px 20px;
+    gap:10px;
+}
+
+.title-bottom-form-complete-tx{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.productsum-bottom-form-complete-tx{
+    display: flex;
+    justify-content: space-between;
+}
+.product-bottom-form-complete-tx{
+    color: #000;
+   
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+}
+
+.sum-bottom-form-complete-tx{
+    color: #000;
+  
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+}
+
+.item-product-bottom-form-complete-tx{
+    color: #6A6A6A;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+}
+
+.item-sum-bottom-form-complete-tx{
+    color: #6A6A6A;
+    
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+}
+
+.fullsum-bottom-form-complete-tx{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.item-fullsum-bottom-form-complete-tx{
+    color: #000;
+   
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.flex-items-bottom-form-complete-tx{
+    display: flex;
+    justify-content: space-between;
+}
+/* #endregion */
