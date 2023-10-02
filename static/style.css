@@ -895,6 +895,16 @@ header {
     color: #FFF;
 }
 
+.btn-arc:focus{
+    background: #8E69F8;
+    color: #FFF;
+}
+.btn-settings:focus{
+    background: #8E69F8;
+    color: #FFF;
+}
+
+
 
 
 .main-info-mywallet-ok{
@@ -2861,6 +2871,186 @@ header {
     font-weight: 500;
     line-height: normal;
     margin: 0;
+}
+
+/* #endregion */
+
+/* #region settings*/
+
+.ok-settings{
+    display: flex;
+    flex-direction: row;
+    padding: 12px 80px;
+    gap: 25px;
+    justify-content: space-between;
+}
+.ok-settings__h3{
+    color: #1C1B71;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+}
+
+.leftside-ok-settings{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 25px;
+}
+
+.photo-ok-settings{
+    display: flex;
+    border-radius: 10px;
+    background: #FFF;
+    justify-content: space-between;
+    padding: 35px 40px;
+    align-items: center;
+    margin-bottom: 27px;
+}
+.flex-photo-ok-settings{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.namesurname-photo-ok-settings{
+    display: flex;
+    gap:5px;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.namesurname-photo-ok-settings > p{
+    margin: 0;
+    
+}
+
+.btns-photo-ok-settings{
+    display: flex;
+    gap: 10px;
+}
+
+.btns-photo-ok-settings > button{
+    padding: 16px 30px;
+    border-radius: 10px;
+    background: rgba(142, 105, 248, 0.50);
+    color: #1C1B71;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: 0;
+}
+
+
+.email-photo-ok-settings{
+    margin: 0;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+.lan-ok-settings{
+    display: flex;
+    gap: 15px;
+    border-radius: 10px;
+    background: #FFF;
+    padding: 34px 40px;
+    flex-wrap: wrap;
+    margin-bottom: 27px;
+}
+
+.input-lan-ok-settings{
+    border-radius: 15px;
+    border: 2px solid #8E69F8;
+    padding: 18px 20px;
+    color: rgba(28, 27, 113, 0.50);
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    
+}
+
+.p-lan-ok-settings{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+}
+
+.item-lan-ok-settings{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.rightside-ok-settings{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 57px;
+}
+.acc-ok-settings{
+    border-radius: 10px;
+    background: #FFF;
+    padding: 17px 20px;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+.namesurname-ok-settings{
+    display: flex;
+    gap: 5px;
+}
+
+.p-namesurname-ok-settings{
+    margin: 0;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.email-ok-settings{
+    margin: 0;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.btn-rightside-ok-settings{
+    border-radius: 10px;
+    background: #FFF;
+    padding: 11px 91px;
+    border: 0;
+    color:  #711B1B;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 /* #endregion */
