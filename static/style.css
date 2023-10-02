@@ -903,6 +903,26 @@ header {
     background: #8E69F8;
     color: #FFF;
 }
+.btn-search:focus{
+    background: #8E69F8;
+    color: #FFF;
+}
+.btn-info-about-ticket:focus{
+    background: #8E69F8;
+    color: #FFF;
+}
+.btn-pass-info:focus{
+    background: #8E69F8;
+    color: #FFF;
+}
+.btn-places:focus{
+    background: #8E69F8;
+    color: #FFF;
+}
+.btn-review-payment:focus{
+    background: #8E69F8;
+    color: #FFF;
+}
 
 
 
@@ -1461,6 +1481,10 @@ header {
     font-weight: 600;
     line-height: normal;
 }
+
+.btn-reservation-detail:hover{
+    background: #7253c5;
+}
 /* #endregion */
 
 
@@ -1959,6 +1983,11 @@ header {
     margin: 20px;
     border: 0;
 }
+.btn-panel-ticket-choose-tickets:hover{
+    background: #7253c5;
+}
+
+
 
 .ticket-choose-tickets{
     gap:4px;
@@ -2218,6 +2247,9 @@ header {
     font-weight: 400;
     line-height: normal;
     border: 0;
+}
+.btn-form-reservation-aboutpass:hover{
+    background: rgba(255, 210, 86);
 }
 .forbtn-form-reservation-aboutpass{
     display: flex;
@@ -2650,6 +2682,11 @@ header {
     line-height: normal;
     border: 0;
 }
+
+.btn-tx-pay-overview:hover{
+    background: #7253c5;
+}
+
 .radiolabel-panel-method-pay-overview{
     color: #000;
     text-align: center;
