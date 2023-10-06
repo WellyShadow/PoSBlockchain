@@ -14,7 +14,14 @@ class Wallet():
         
         #nodeWallet = NodeWalletCommunication()
             
+    def __getstate__(self):
+        return self.__dict__
 
+    def __reduce__(self):
+        return (self.__class__, ())
+
+    def __setstate__(self, state):
+        self.__dict__ = state
         #Wallet.node_instance = None
         #self.node_instance = None
         #self.node = None

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&display=swap" rel="stylesheet">
@@ -11,9 +12,9 @@
 </head>
 <body>
     <header class = "header">
-        <img class = "icon" src="/static/images/Vector.svg" alt="icon">
+        <a href="index"><img class = "icon" src="/static/images/Vector.svg" alt="icon"></a>
         <p class="name">FlyChain</p>
-        <a href="" class = "nav__link">Бронювання</a>
+        <a href="clickonreservation" class = "nav__link">Бронювання</a>
         <a href="" class = "nav__link">Про авіакомпанію</a>
         <a href="" class = "nav__link">Контакти</a>
 
@@ -65,8 +66,8 @@
                                 </svg>
                         </div>
                         <div class = "to-info-actual_travel">
-                            <p class = "time-info-actual_travel">9:00</p>
-                            <p class = "city-info-actual_travel">Лондон</p>
+                            <p class = "time-info-actual_travel">22:15</p>
+                            <p class = "city-info-actual_travel">Париж</p>
                             <p class = "date-info-actual_travel">чтв, 10 серп.</p>
                         </div>
 
@@ -78,9 +79,10 @@
                             <path d="M11.0763 56.4909C11.6277 48.131 18.5832 41.5208 27.0827 41.5208H39.916C48.4043 41.5208 55.3528 48.1135 55.9203 56.4577M33.4993 65.5832C51.2185 65.5832 65.5827 51.219 65.5827 33.4998C65.5827 15.7807 51.2185 1.4165 33.4993 1.4165C15.7802 1.4165 1.41602 15.7807 1.41602 33.4998C1.41602 51.219 15.7802 65.5832 33.4993 65.5832ZM33.4994 31.8958C37.9291 31.8958 41.5202 28.3047 41.5202 23.875C41.5202 19.4453 37.9291 15.8542 33.4994 15.8542C29.0696 15.8542 25.4785 19.4453 25.4785 23.875C25.4785 28.3047 29.0696 31.8958 33.4994 31.8958Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                         <div class = "nameaddress-top-balance">
-                            <p class = "name-top-balance">Name Surname</p>
+                            <p class = "name-top-balance"> Name Surname</p>
+    
                             <div class = "address-top-balance">
-                                <p>{{publicKeyString}}</p>
+                                <p>{{publicKeyStringShort}}</p>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16" fill="none">
                                     <path d="M12.5 6.125H6.875C6.18464 6.125 5.625 6.68464 5.625 7.375V13C5.625 13.6904 6.18464 14.25 6.875 14.25H12.5C13.1904 14.25 13.75 13.6904 13.75 13V7.375C13.75 6.68464 13.1904 6.125 12.5 6.125Z" fill="black" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                     <path d="M3.125 9.875H2.5C2.16848 9.875 1.85054 9.7433 1.61612 9.50888C1.3817 9.27446 1.25 8.95652 1.25 8.625V3C1.25 2.66848 1.3817 2.35054 1.61612 2.11612C1.85054 1.8817 2.16848 1.75 2.5 1.75H8.125C8.45652 1.75 8.77446 1.8817 9.00888 2.11612C9.2433 2.35054 9.375 2.66848 9.375 3V3.625" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -104,7 +106,7 @@
                         <h3 class = "h3-bottom-balance">Balance</h3>
                         <div class = "topup-balance-bottom-balance">
                             <p class = "balance-bottom-balance">{{balance}}</p>
-                            <p class = "topup-bottom-balance">+ Поповнити рахунок</p>
+                            <a class = "topup-bottom-balance" href="topup_balance"><p>+ Поповнити рахунок</p></a>
                         </div>
                     </div>
                 </div>

@@ -11,9 +11,9 @@
 </head>
 <body>
     <header class = "header">
-        <img class = "icon" src="/static/images/Vector.svg" alt="icon">
+        <a href=""><img class = "icon" src="/static/images/Vector.svg" alt="icon"></a>
         <p class="name">FlyChain</p>
-        <a href="" class = "nav__link">Бронювання</a>
+        <a href="clickonreservation" class = "nav__link">Бронювання</a>
         <a href="" class = "nav__link">Про авіакомпанію</a>
         <a href="" class = "nav__link">Контакти</a>
 
@@ -37,14 +37,14 @@
         <section class = "info-order">
             <div class = "title-order"> 
                 <h3 class = "h3__order">Лондон — Париж</h3>
-                <p class = "some-info-order">  9 год. 25 хв.</p>
+                <p class = "some-info-order">  13 год. 15 хв.</p>
             </div>
             <div class = "main-order">
                 <div class = "ticket-order">
                     <div class = "upper-ticket-order">
                         <div class = "title-ticket-order">
                             <p class = "company-title-ticket-order">American Airline</p>
-                            <p class = "time-title-ticket-order">9год 25хв  в польоті</p>
+                            <p class = "time-title-ticket-order">13год 15хв  в польоті</p>
                         </div>
                         <button class = "btn-upper-ticket-order">Детальніше</button>
                     </div>
@@ -59,11 +59,11 @@
                         <div>
                             <div>
                                 <p class = "time-bottom-ticket-order">09:00</p>
-                                <p class = "date-bottom-ticket-order">чтв, 10 серп.</p>
+                                <p class = "date-bottom-ticket-order">пт, 25 серп.</p>
                             </div>
                             <div>
                                 <p class = "time-bottom-ticket-order">22:15</p>
-                                <p class = "date-bottom-ticket-order">чтв, 10 серп.</p>
+                                <p class = "date-bottom-ticket-order">пт, 25 серп.</p>
                             </div>
                         </div>
                         <div>
@@ -83,7 +83,7 @@
                     <div class = "pass-reservation-detail">
                         <div class = "title-pass-reservation-detail">
                             <p class = "title-title-pass-reservation-detail">1 Пасажир</p> 
-                            <p class = "item-title-pass-reservation-detail">Багаж 23 кг</p> 
+                            <p class = "item-title-pass-reservation-detail">Багаж 10 кг</p> 
                             <p class = "item-title-pass-reservation-detail">Вартість квитка</p> 
                         </div>
                         <div class = "info-pass-reservation-detail">
@@ -96,7 +96,7 @@
                         <p class = "title-sum-reservation-detail">Всього</p>
                         <p class = "title-sum-reservation-detail">₴7 140</p>
                     </div>
-                    <button class = "btn-reservation-detail">Продовжити</button>
+                    <button onclick="window.location.href = 'continue_order_tickets'" class = "btn-reservation-detail">Продовжити</button>
                 </div>
             </div>
         </section>
