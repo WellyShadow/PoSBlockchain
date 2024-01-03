@@ -3,7 +3,7 @@ from Cryptodome.Signature import PKCS1_v1_5
 from BlockchainUtils import BlockchainUtils
 from Transaction import Transaction
 from Block import Block
-from AccountModel import AccountModel
+
 
 class Wallet():
 
@@ -12,7 +12,6 @@ class Wallet():
     def __init__(self):
         self.keyPair = RSA.generate(2048)
         
-        #nodeWallet = NodeWalletCommunication()
             
     def __getstate__(self):
         return self.__dict__
@@ -22,24 +21,7 @@ class Wallet():
 
     def __setstate__(self, state):
         self.__dict__ = state
-        #Wallet.node_instance = None
-        #self.node_instance = None
-        #self.node = None
-        #self.accModel = AccountModel.get_a()
-        #self.blockchain = blockchain
         
-    #def setAccountModel(self, account_model):
-    #    self.accModel = account_model
-    #@classmethod
-    #def setNode(cls, node):
-    #        if cls.node is None:
-    #            cls.node = node
-    #            print('in setNode',type(cls.node))
-
-    #@classmethod
-    #def getNode(cls):
-    #    print('in getNode cls',type(cls.node))
-    #    return cls.node
 
     def fromKey(self, file):
         key = ''
@@ -66,6 +48,10 @@ class Wallet():
         publicKeyString = self.keyPair.publickey().exportKey('PEM').decode('utf-8')
         return publicKeyString
     
+    def privateKeyString(self):
+        privateKeyString = self.keyPair.exportKey('PEM').decode('utf-8')
+        return privateKeyString
+    
     def createTransaction(self,receiver,amount, type):
         transaction = Transaction(self.publicKeyString(),receiver,amount,type)
         signature = self.sign(transaction.payload())
@@ -77,25 +63,3 @@ class Wallet():
         signature = self.sign(block.payload())
         block.sign(signature)
         return block
-
-    #def injectblockchain(self, injectedblockchain):
-    #    global blockchain
-     #   blockchain = injectedblockchain
-    #def balance(self):
-        #self.getAccModel()
-        #publicKeyString = self.publicKeyString()
-        #print(publicKeyString)
-        #blockchain = Node.getBlockchain()
-        #self.injectblockchain(blockchain)
-        #node = Wallet.getNode()
-        #print(1)
-        #if Wallet.node_instance is not None:
-        #blockchain = Wallet.node_instance.blockchain
-        #balance = blockchain.accountModel.balances
-        #print(balance)
-        #return balance
-        #else:
-        #print("Node не был установлен в классе Wallet")
-
-        #print(balance)
-        #return balance

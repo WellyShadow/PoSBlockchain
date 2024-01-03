@@ -3,12 +3,12 @@ import copy
 
 class Airplane():
     def __init__(self):
-        self.fromWhere = "Лондон"
-        self.where = "Париж"
-        self.date = "05.09.2023"
-        self.timeDeparture = "16:40"
-        self.timeArrival = "20:40"
-        self.companyName = "American Airline"
+        self.fromWhere = "Київ"
+        self.where = "Львів"
+        self.date = "25.12.2023"
+        self.timeDeparture = "9:00"
+        self.timeArrival = "12:00"
+        self.companyName = "МАУ"
         self.tickets = [Ticket() for _ in range(20)]
 
     def printTickets(self):

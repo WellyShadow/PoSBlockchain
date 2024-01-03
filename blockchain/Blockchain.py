@@ -10,14 +10,10 @@ class Blockchain():
         self.accountModel = AccountModel()
         self.pos = ProofOfStake()
         self.airplane = Airplane()
-        #self.wallet = Wallet()
-        #self.wallet.setAccountModel(self.accountModel)
         
-
     def addBlock(self,block):
         self.executeTransactions(block.transactions)
         self.blocks.append(block)
-
 
     def toJson(self):
         data={}
@@ -49,19 +45,15 @@ class Blockchain():
                 print('Transaction is not covered by sender')
         return coveredTransactions
 
-    
     def transactionCovered(self, transaction):
         if transaction.type == 'EXCHANGE':
             return True
         senderBalance =  self.accountModel.getBalance(transaction.senderPublicKey)
-        
         if senderBalance >= transaction.amount:
             return True
         else :
-            print(senderBalance, 'мало')
             return False
 
-    
     def executeTransactions(self, transactions):
         for transaction in transactions:
             self.executeTransaction(transaction)
@@ -98,7 +90,8 @@ class Blockchain():
     def createBlock(self, transactionFromPool, forgerWallet):
         coveredTransactions = self.getCoveredTransactionSet(transactionFromPool)
         self.executeTransactions(coveredTransactions)
-        newBlock = forgerWallet.createBlock(coveredTransactions, BlockchainUtils.hash(self.blocks[-1].payload()).hexdigest(), len(self.blocks))
+        newBlock = forgerWallet.createBlock(coveredTransactions, 
+                                            BlockchainUtils.hash(self.blocks[-1].payload()).hexdigest(), len(self.blocks))
         self.blocks.append(newBlock)
         return newBlock
     

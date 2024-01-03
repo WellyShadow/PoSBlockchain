@@ -1,6 +1,3 @@
-
-
-
 class SocketConnector():
 
     def __init__(self, ip, port):

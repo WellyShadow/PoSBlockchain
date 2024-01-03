@@ -17,14 +17,10 @@ class Node():
         self.wallet = Wallet()
         if key is not None:
             self.wallet.fromKey(key)
-        #Wallet.setNode(self)
-        #NodeWalletCommunication()
-    #def getBlockchain(self):
-    #    return self.blockchain
+        
     def startP2P(self):
         self.p2p = SocketCommunication(self.ip, self.port)
         self.p2p.startSocketCommunication(self)
-
 
     def startAPI(self, apiPort):
         self.api = NodeAPI()

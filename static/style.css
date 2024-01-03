@@ -738,7 +738,7 @@ header {
 
 
 /* #region formsignin */
-.form-signin,.form-create_wallet{
+.form-signin,.form-create_wallet,.form-save-info {
     display: flex;
     flex-direction: column;
     margin: 188px 385px;
@@ -750,6 +750,21 @@ header {
     position: relative;
 }
 
+
+.form-save-info {
+    display: flex;
+    flex-direction: column;
+    margin: 188px 385px;
+    box-shadow: 0px 0px 30px 20px rgba(142, 105, 248, 0.20);
+    background: #FFF;
+    border-radius: 20px;
+    padding: 40px;
+    gap: 20px;
+    position: relative;
+}
+.form-save-info > p {
+    margin: 0;
+}
 .text-signin,.text-create_wallet{
     color: #000;
     font-family: Montserrat;
@@ -758,11 +773,35 @@ header {
     font-weight: 600;
     line-height: normal;
 }
+.text-save-info{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
 
-.login-signin, .pass-signin{
+.login-signin, .pass-signin,.login-save-info, .pass-save-info{
     border-radius: 10px;
     border: 1px solid #1C1B71;
     padding: 14px 0 14px 20px;
+}
+.login-save-info{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.pass-save-info{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .login-signin{
@@ -797,7 +836,21 @@ header {
     text-decoration: none;
 }
 
-.btn-signin{
+.howtosave{
+    position: absolute;
+    right: 60px;
+    top: 205px;
+    color: rgba(28, 27, 113, 0.50);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.btn-signin, .continue-save-info{
     border-radius: 20px;
     border: 1px solid #1C1B71;
     background: rgba(142, 105, 248, 0.30);
@@ -990,8 +1043,9 @@ header {
 .between-info-actual_travel > p{
     position: absolute;
     margin: 0;
-    transform: translate(70%, -140%);
+    transform: translate(110%, -140%);
 }
+
 
 .to-info-actual_travel{
     text-align: right;
@@ -1119,6 +1173,10 @@ header {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+.topup-bottom-balance > p{
+    margin: 0;
 }
 /* #endregion */
 /* #region switch-btn */
@@ -1320,6 +1378,15 @@ header {
     border: 0;
 
 }
+
+.ticket-row-choose-ticket-menu-reservation:hover{
+    background: #7253c5;
+}
+
+.ticket-row-choose-ticket-menu-reservation:focus{
+    background: #7e66c2;
+}
+
 
 .number-ticket-menu-reservation{
     display: flex;

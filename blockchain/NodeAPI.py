@@ -47,7 +47,8 @@ class NodeAPI(FlaskView):
             first_four_chars = public_key_data[:5]
             last_four_chars = public_key_data[-5:]
             outputResult = first_four_chars + "-" + last_four_chars
-        return render_template('ok_mycryptowallet.html',publicKeyStringShort = outputResult,publicKeyString=result,balance = balance), 200
+        return render_template('ok_mycryptowallet.html',publicKeyStringShort = outputResult,
+                               publicKeyString=result,balance = balance), 200
 
     @route('/blockchain', methods = ['GET'])
     def blockchain(self):
@@ -145,14 +146,40 @@ class NodeAPI(FlaskView):
     def createwallet(self):
         wallet = Wallet()
         publicKeyString = wallet.publicKeyString()
+        privateKeyString = wallet.privateKeyString()
+        print(publicKeyString)
         session['publicKeyString'] = publicKeyString
         session['wallet'] = pickle.dumps(wallet)
-        return redirect (url_for('NodeAPI:ok_mycryptowallet',publicKeyString = publicKeyString))
+        return redirect (url_for('NodeAPI:aftercreatewallet',publicKeyString = publicKeyString, privateKeyString = privateKeyString))
+    
+    @route('/aftercreatewallet', methods = ['GET'])
+    def aftercreatewallet(self,publicKeyString = 0, privateKeyString = 0):
+        publicKeyString = request.args.get('publicKeyString')
+        privateKeyString = request.args.get('privateKeyString')
+        if publicKeyString is not None:
+            lines = publicKeyString.split('\\n')
+            for i in range(2, len(lines)-2):
+                lines[i] = lines[i].replace(' ', '+')
+            result = '\n'.join(lines)
+            print(result)
+        return render_template('aftercreatewallet.html',publicKeyString = result, privateKeyString = privateKeyString)
+    
+    @route('/continue_aftersave', methods = ['GET'])
+    def continue_aftersave(self ):
+        publicKeyString = session.get('publicKeyString')
+        if publicKeyString is not None:
+            lines = publicKeyString.split('\\n')
+            for i in range(2, len(lines)-2):
+                lines[i] = lines[i].replace(' ', '+')
+            result = '\n'.join(lines)
+        return redirect (url_for('NodeAPI:ok_mycryptowallet',publicKeyString = result))
+    
     
     @route('/topup_balance')
     def topup_balance(self):
         publicKeyString = session.get('publicKeyString')
-        transaction = company.createTransaction(publicKeyString, 40, 'EXCHANGE')
+        
+        transaction = company.createTransaction(publicKeyString, 3000, 'EXCHANGE')
         url = 'http://localhost:5000/transaction'
         package = {'transaction': BlockchainUtils.encode(transaction)}
         response = requests.post(url, json = package)
